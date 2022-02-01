@@ -84,7 +84,7 @@ for (var i = 0; i < data.length; i++) {
 
     //create product cards
     products +=
-        "<div class='col-sm-4 product' data-name='" +
+        "<div class='col-lg-4 col-md-6 col-sm-6 product' data-name='" +
         name +
         "' data-subject='" +
         subject +
@@ -96,7 +96,7 @@ for (var i = 0; i < data.length; i++) {
         center +
         "' data-grade='" +
         grade +
-        "'><div class='product-inner text-center'><img src='" +
+        "'><div class='product-inner text-center '><img src='" +
         image +
         "'>" +
         ` <h5> <i class="fas fa-user-shield"></i>${name} </h5> ` +
@@ -216,5 +216,12 @@ $("#search-form").submit(function (e) {
         ) {
             $(this).show();
         }
+    });
+});
+
+$(document).ready(function () {
+    $(".filter-sec").click(function () {
+        $(".filter-hidden").toggleClass("hidden");
+        console.log("filtered");
     });
 });
