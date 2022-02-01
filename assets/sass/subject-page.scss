@@ -1,0 +1,89 @@
+@import "./shared/shared";
+@import "./components/subjects";
+
+.subjects-page {
+  .subject {
+    margin-bottom: 2rem;
+  }
+  .subjects-search {
+    &__wrapper {
+      background: url("/assets/images/subject/book-with-green-board-background.png")
+        no-repeat center center;
+      background-size: cover;
+      height: 275px;
+      border-radius: 5px;
+      margin-bottom: 2rem;
+      margin-right: 15px;
+      margin-left: 15px;
+      display: flex;
+      align-items: center;
+      .row {
+        justify-content: center;
+      }
+      form {
+        width: 100%;
+      }
+    }
+    select {
+      option {
+      }
+    }
+  }
+
+  form {
+    select {
+      background: $white-blue;
+      border: none;
+      padding: 0.8rem 1rem;
+      margin-bottom: 1rem;
+      border: 1px solid $white-blue !important;
+      transition: all 0.5s;
+      color: #acacac;
+    }
+
+    select:focus {
+      border: 1px solid $border-gray !important;
+    }
+    button.btn-search {
+      color: white;
+      background: $red;
+      padding: 0.8rem 1rem;
+      img {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
+@include to-tablet-sm {
+  .subjects-page {
+    .subjects-search {
+      &__wrapper {
+        background-position: bottom right;
+        form {
+          padding: 1rem;
+          button.btn-search {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+@include to-tablet-lg {
+  .subjects-page {
+    .subjects-search {
+      &__wrapper {
+        background-position: bottom right;
+        form {
+          padding: 1rem;
+          button.btn-search {
+            img {
+              margin-right: 0.5rem;
+            }
+            padding: 0.8rem 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}

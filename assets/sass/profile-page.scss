@@ -1,0 +1,56 @@
+@import "./shared/shared";
+// components
+@import "./components/progress";
+@import "./sections/profile-header";
+@import "./components/my-courses";
+@import "./components/fav";
+@import "./components/achivements";
+@import "./components/personal-profile";
+.profile-page {
+  form {
+    div.password {
+      position: relative;
+      img {
+        position: absolute;
+        left: 0.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+      }
+      input.form-control {
+        padding-left: 2.5rem;
+      }
+    }
+    input,
+    textarea {
+      background: $white-blue;
+      border: none;
+      padding: 0.8rem 1rem;
+      margin-bottom: 1rem;
+      border: 1px solid $white-blue !important;
+      transition: all 0.5s;
+      color: #acacac;
+      &.form-control::-moz-placeholder {
+        color: #acacac !important;
+      }
+      &.form-control:-ms-input-placeholder {
+        color: #acacac !important;
+      }
+      &.form-control::-webkit-input-placeholder {
+        color: #acacac !important;
+      }
+    }
+
+    input:focus {
+      border: 1px solid $border-gray !important;
+    }
+  }
+}
+
+// customs
+.tab-pane {
+  margin: 2.5rem 0;
+}
+.profile-page .my-courses__card {
+  margin-bottom: 1.5rem;
+}

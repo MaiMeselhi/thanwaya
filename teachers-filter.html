@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home</title>
+        <!-- main-styles -->
+        <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css" />
+        <link rel="stylesheet" href="assets/css/slick-theme.css" />
+        <link rel="stylesheet" href="assets/css/slick.css" />
+        <link
+            rel="stylesheet"
+            href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+            crossorigin="anonymous"
+        />
+        <!--style-->
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body>
+        <!-- start navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="assets/images/home/logo.png" class="img-fluid" />
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                >
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html">من نحن</a>
+                        </li>
+
+                        <li class="nav-item mx-1">
+                            <a
+                                class="nav-link"
+                                href="#"
+                                id="btn__popUp"
+                                data-bs-target="#choiseModal"
+                                data-bs-toggle="modal"
+                            >
+                                إنشاء حساب
+                            </a>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a class="nav-link" href="/login.html">
+                                تسجيل دخول
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto nav-right">
+                        <button class="btn-subscribe btn">
+                            اشترك فى المسابقة
+                        </button>
+                        <button type="button" class="btn-subscribe__now btn">
+                            اشترك الآن
+                        </button>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end navbar -->
+        <!-- Start Modal Free -->
+        <div
+            class="modal fade create-modal"
+            id="choiseModal"
+            tabindex="-1"
+            aria-labelledby="choiseModal"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>إنشاء حساب جديد</h2>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="bg__popUp__content">
+                            <a href="register-as-teacher.html">
+                                <button class="bg__popUp__item">المعلم</button>
+                            </a>
+                            <a href="register-as-student.html">
+                                <button class="bg__popUp__item student">
+                                    الطالب
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Modal Free -->
+
+        <div class="container after-navbar-section padding-y">
+            <div class="row search__container" id="search">
+                <form
+                    id="search-form"
+                    action=""
+                    method="POST"
+                    enctype="multipart/form-data"
+                >
+                    <div class="form-group col-xs-9">
+                        <input
+                            class="form-control box search__input"
+                            type="text"
+                            placeholder=" ابحث / اسم المعلم"
+                        />
+                    </div>
+                </form>
+            </div>
+
+            <div class="row" id="filter">
+                <form>
+                    <div class="form-group col-md-2 col-sm-3 col-xs-6">
+                        <i class="fas fa-bookmark"></i>
+                        <label class="choose-label">اختر المادة</label>
+
+                        <select
+                            data-filter="subject"
+                            class="filter-subject filter"
+                        >
+                            <option value="">المادة</option>
+                            <option value="">عرض الكل</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group col-md-2 col-sm-3 col-xs-6">
+                        <i class="fas fa-user-graduate"></i>
+                        <label class="choose-label">اختر الصف</label>
+                        <select
+                            data-filter="grade"
+                            class="filter-grade select filter"
+                        >
+                            <option value="">الصف</option>
+                            <option value="">عرض الكل</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2 col-sm-3 col-xs-6">
+                        <i class="fad fa-landmark"></i>
+                        <label class="choose-label">اختر المحافظة</label>
+                        <select data-filter="area" class="filter-area filter">
+                            <option value="">المحافظة</option>
+                            <option value="">عرض الكل</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2 col-sm-3 col-xs-6">
+                        <i class="far fa-building"></i>
+                        <label class="choose-label">اختر السنتر</label>
+                        <select
+                            data-filter="center"
+                            class="filter-center filter"
+                        >
+                            <option value="">السنتر</option>
+                            <option value="">عرض الكل</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+
+            <div
+                class="row justify-content-center col-md-8"
+                id="products"
+            ></div>
+        </div>
+
+        <!-- scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/slick.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/slider.js"></script>
+        <script src="assets/js/index.js"></script>
+        <script src="assets/js/teachers.js"></script>
+    </body>
+</html>

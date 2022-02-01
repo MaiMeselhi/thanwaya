@@ -1,0 +1,127 @@
+#products {
+  font-family: cairo;
+  margin-inline-start: 20rem;
+  top: 12rem;
+  position: absolute;
+
+  .product-inner {
+    display: block;
+    font-size: 1rem;
+    color: #868b8e;
+    top: 0px;
+    position: relative;
+    max-width: 262px;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 20px 10px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    border: 1px solid #cddeff;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    h5 {
+      font-size: 1.1rem;
+      padding-top: 1rem;
+      margin: 0;
+      color: #707070;
+      font-weight: bold;
+      text-align: start;
+
+      i {
+        color: #03a9f4;
+        margin-inline: 1rem;
+      }
+    }
+    p {
+      margin: 0 !important;
+      padding-top: 0.5rem;
+      text-align: start;
+
+      i {
+        color: #03a9f4;
+        margin-inline-start: 1.2rem;
+        margin-inline-end: 1rem;
+      }
+    }
+  }
+  img {
+    width: 50%;
+  }
+
+  .product-inner:hover {
+    transition: all 0.2s ease-out;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    top: -4px;
+    border: 1px solid #cccccc;
+    background-color: white;
+  }
+}
+
+#filters {
+  width: 250px;
+  form {
+    .form-group {
+      .filter-subject {
+        margin-bottom: 2.5rem;
+      }
+    }
+  }
+}
+.search {
+  display: flex;
+
+  align-items: center;
+  &__title {
+    font-size: 22px;
+    font-weight: 900;
+    text-align: center;
+    color: #ff8b88;
+  }
+
+  &__input {
+    background: transparent;
+    font-size: 2rem;
+    width: 300px;
+    padding: 12px 24px;
+    margin: auto;
+    border: none !important;
+    border-radius: 0;
+
+    border-bottom: 1px solid #575756 !important;
+    background-color: transparent;
+    transition: all 250ms ease-in-out;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #03a9f4;
+
+    &::placeholder {
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-size: 1rem;
+      color: #03a9f4;
+
+      font-weight: bold;
+    }
+
+    &:hover,
+    &:focus {
+      padding: 12px 0;
+      outline: 0;
+      border: 1px solid transparent;
+      border-radius: 0;
+      background: transparent;
+    }
+  }
+}
+.filter {
+  width: 300px;
+  margin-bottom: 1rem;
+  border: none;
+  height: 3rem;
+  font-size: 1.1rem;
+  color: #707070;
+  font-weight: bold;
+  background: transparent;
+}

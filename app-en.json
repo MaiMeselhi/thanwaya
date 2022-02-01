@@ -1,0 +1,92 @@
+{
+  "navbar": {
+    "item1": "item1",
+    "item2": "item2",
+    "item3": "item3",
+    "item4": "item4",
+    "contact": "contact-us",
+    "button-signup": "signup",
+    "button-try": "free trial"
+  },
+  "joinus2": {
+    "h": "Header Of Joinus",
+    "p": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+  },
+  "joinus": {
+    "h3": "call us",
+    "h2": "We are with you all the day",
+    "p": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "address": "address comes here",
+    "form": {
+      "name": "Please enter your name",
+      "email": "Example: example@gmail.com",
+      "address": "Example: City - Country",
+      "phone": "Example: +966 **** **** **",
+      "textarea": "Send your message here",
+      "name-label": "Name",
+      "email-label": "Email",
+      "address-label": "Address",
+      "phone-label": "Phone Number",
+      "textarea-label": "Message",
+      "submit": "Send"
+    }
+  },
+  "main": {
+    "header": {
+      "h": "DATA BILL System",
+      "p": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    "button": {
+      "what": "What is DATA BILL",
+      "try": "Free Trial"
+    },
+    "items": {
+      "item1": "Item 1 Lorem Ipsum",
+      "item2": "Item 2 Lorem Ipsum",
+      "item3": "Item 3 Lorem Ipsum"
+    }
+  },
+  "why": {
+    "header": {
+      "span1": "Why Choose",
+      "span2": "DATA BILL",
+      "?": "?",
+      "p": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+    },
+    "item0": {
+      "h2": "Item 0 Header",
+      "p": "Item 0 Pararaph"
+    },
+    "item1": {
+      "h2": "Item 1 Header",
+      "p": "Item 1 Pararaph"
+    },
+    "item2": {
+      "h2": "Item 2 Header",
+      "p": "Item 2 Pararaph"
+    },
+    "item3": {
+      "h2": "Item 3 Header",
+      "p": "Item 3 Pararaph"
+    },
+    "item4": {
+      "h2": "Item 4 Header",
+      "p": "Item 4 Pararaph"
+    },
+    "item5": {
+      "h2": "Item 5 Header",
+      "p": "Item 5 Pararaph"
+    }
+  },
+  "clients": {
+    "h": {
+      "clients": "Clients",
+      "uniq": "uniq",
+      "p": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+    }
+  },
+  "slider2": {
+    "p": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "user": "Mohamed Saadon - Owner Of Company"
+  }
+}

@@ -1,0 +1,142 @@
+.login-body {
+    background-color: #eeeff4;
+}
+
+.login-form {
+    .btn:hover {
+        transition: 1s ease-in-out;
+        background: #145da0;
+    }
+
+    figure {
+        img {
+            width: 90%;
+        }
+    }
+    form {
+        div.password {
+            position: relative;
+            img {
+                position: absolute;
+                left: 0.5rem;
+                top: 49%;
+                transform: translateY(-50%);
+                cursor: pointer;
+            }
+        }
+        input {
+            padding: 0.8rem 1rem;
+            margin: 1rem 0;
+            &.form-control::-moz-placeholder {
+                color: #acacac !important;
+            }
+            &.form-control:-ms-input-placeholder {
+                color: #acacac !important;
+            }
+            &.form-control::-webkit-input-placeholder {
+                color: #acacac !important;
+            }
+        }
+
+        button {
+            background-color: $primary;
+            color: white;
+            padding: 1rem;
+            width: 100%;
+            height: 4rem;
+            img {
+                margin-right: 0.5rem;
+            }
+        }
+        input[type="checkbox"] {
+            width: 30px;
+            height: 16px;
+        }
+
+        .checkbox {
+            padding-bottom: 1rem;
+        }
+        .checkbox,
+        .btn-forget {
+            font-size: 1rem;
+        }
+        .btn-forget {
+            color: #4eb5f1;
+        }
+        .modal {
+            .modal-dialog {
+                .modal-content {
+                    .modal-header {
+                        .btn-close {
+                            width: 1rem;
+                            height: 1rem;
+                        }
+                    }
+                    input {
+                        width: 90%;
+                        display: block;
+                        margin: 10px auto;
+                    }
+                }
+            }
+        }
+        .btn-footer-modal {
+            width: 10rem;
+            height: 3rem;
+            padding: 0;
+            border-radius: 1rem;
+            margin: auto;
+            &.btn-modal {
+                display: inline-block;
+
+                margin: 0 0.3em 0.3em 0;
+                border-radius: 2em;
+                box-sizing: border-box;
+                text-decoration: none;
+                font-family: "Roboto", sans-serif;
+                font-weight: 300;
+                color: #ffffff;
+                background-color: #4eb5f1;
+                text-align: center;
+                transition: all 0.2s;
+            }
+            &.btn-modal:hover {
+                background-color: #4095c6;
+            }
+        }
+        button {
+            background-color: $primary;
+            color: white;
+            padding: 1rem;
+            width: 100%;
+            border: 1px solid $primary;
+            font-size: 1rem;
+        }
+    }
+    .btn_newAccount {
+        border: 1px solid #d6d6d6;
+        background: #f1f1f1;
+        color: #707070;
+    }
+}
+.modal {
+    z-index: 9999;
+    .modal-header,
+    .modal-footer {
+        border: none;
+    }
+    .btn-close {
+        background-color: red;
+        color: #fff;
+    }
+    div.password {
+        position: relative;
+        img {
+            position: absolute;
+            left: 2.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+    }
+}

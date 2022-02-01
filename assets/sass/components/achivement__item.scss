@@ -1,0 +1,59 @@
+@import "../shared/shared";
+.achievement {
+  .item {
+    display: flex;
+    align-items: center;
+    border: 1px solid $border-gray;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    figure {
+      margin-left: 1rem;
+      width: 98px;
+      height: 98px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .achivement__content {
+    flex: 1;
+    h5 {
+      font-size: 1.25rem;
+      color: $gray9f;
+      margin-bottom: 12px;
+      font-weight: bold;
+    }
+    p {
+      font-size: 1rem;
+      color: $gray9f;
+      margin-bottom: 11px !important;
+      font-weight: lighter;
+    }
+    .my-progress-bar .my-progress {
+      background: red;
+    }
+    .my-progress {
+      background: $red;
+      &-bar {
+        height: 7px;
+        background: #f1f5f9;
+      }
+    }
+  }
+}
+
+@include mobile-xs {
+  .achievement {
+    .item {
+      padding: 1rem 0.5rem;
+    }
+    .achivement__content {
+      flex: 1;
+    }
+  }
+}

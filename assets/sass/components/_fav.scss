@@ -1,0 +1,51 @@
+.no-fav {
+  figure {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  .no-fav__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 2rem !important;
+      color: #c4c4c4;
+    }
+    button {
+      border: none;
+      padding: 1rem 7.625rem;
+      font-size: 1.25rem;
+      color: white;
+      background: $red;
+      border-radius: 0.625rem;
+    }
+  }
+}
+
+@include to-tablet-sm {
+  .no-fav {
+    figure {
+      img {
+        width: 200px;
+      }
+    }
+
+    .no-fav__content {
+      p {
+        margin-bottom: 2rem !important;
+        font-size: 1rem;
+      }
+      button {
+        font-size: 1rem;
+        padding: 1rem 4rem;
+      }
+    }
+  }
+}

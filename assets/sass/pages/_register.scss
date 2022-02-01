@@ -1,0 +1,123 @@
+@import "../shared/shared";
+
+@import "../components/header";
+.register {
+  form {
+    div.password {
+      position: relative;
+      img {
+        position: absolute;
+        left: 0.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+      }
+      input.form-control {
+        padding-left: 2.5rem;
+      }
+    }
+    label {
+      margin-bottom: 0.5rem;
+    }
+    input,
+    textarea,
+    select {
+      background: $white-blue;
+      border: none;
+      padding: 0.8rem 1rem;
+      margin-bottom: 1rem;
+      border: 1px solid $white-blue !important;
+      transition: all 0.5s;
+      color: #acacac;
+      &.form-control::-moz-placeholder {
+        color: #acacac !important;
+      }
+      &.form-control:-ms-input-placeholder {
+        color: #acacac !important;
+      }
+      &.form-control::-webkit-input-placeholder {
+        color: #acacac !important;
+      }
+    }
+    input:focus {
+      border: 1px solid $border-gray !important;
+    }
+    button {
+      background-color: #03a9f4;
+      color: white;
+      padding: 1rem;
+      height: 3.5rem;
+      width: 100%;
+      img {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+  div.btn__wrapper {
+    display: flex;
+    .btn-remove,
+    .btn__add {
+      background: #f1f5f9;
+      color: #333;
+      height: 52px;
+      width: 100%;
+      line-height: 1;
+      margin-top: 32px;
+      font-size: 1rem;
+    }
+    .btn-remove {
+      color: white;
+      background: #dc3545;
+    }
+  }
+  .i-icon {
+    display: inline-block;
+    width: 1.25rem;
+    height: 1.25rem;
+    line-height: 1;
+    font-size: 1.25rem;
+    border-radius: 50%;
+    margin-inline-start: 0.5rem;
+    background: #2a2a2a;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+  }
+  .add-field {
+    padding: 0;
+    margin-inline-start: 0.5rem;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    color: #333;
+    border: 2px solid #03a9f4;
+    background: transparent;
+    color: #03a9f4;
+    line-height: 0;
+    &.remove {
+      align-items: center;
+      display: flex;
+      height: 100%;
+      align-self: center;
+      border: none;
+      margin-bottom: 1rem;
+      i {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        line-height: 1;
+        color: #f44336;
+        display: block;
+      }
+    }
+  }
+}
+
+@include to-tablet-sm {
+  .register {
+    div.btn__wrapper .btn__add,
+    .btn-remove {
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+  }
+}

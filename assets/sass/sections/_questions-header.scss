@@ -1,0 +1,50 @@
+.questions-page {
+  .questions {
+    &__head {
+      background: $white-blue;
+      padding: 1.25rem;
+      border-radius: 15px;
+      margin-bottom: 1.25rem;
+      header {
+        h2 {
+          font-size: 1.875rem;
+          font-weight: bold;
+          color: $gray70;
+          margin-bottom: 1rem;
+        }
+        p {
+          font-size: 1.25rem;
+          font-weight: normal;
+          color: $gray70;
+          margin-bottom: 1rem !important;
+        }
+      }
+
+      .my-progress-bar {
+        background: #e3e3e3;
+      }
+    }
+    &__numbers {
+      font-size: 1rem;
+      font-weight: normal;
+      color: $gray70;
+    }
+  }
+}
+
+@include to-mobile-sm {
+  .questions-page .questions__head {
+    header {
+      h2 {
+        font-size: 1.25rem;
+      }
+      p {
+        font-size: 0.7rem;
+        margin-bottom: 0.5rem !important;
+      }
+    }
+    .questions__numbers {
+      font-size: 0.75em;
+    }
+  }
+}

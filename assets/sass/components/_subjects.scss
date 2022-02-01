@@ -1,0 +1,38 @@
+.subjects-section {
+  .subject {
+    &__card {
+      border: 1px solid $border-gray;
+      border-radius: 7px;
+      padding: 4rem 0 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 0 0.5rem;
+      position: relative;
+      figure {
+        margin-bottom: 3.5rem;
+        display: flex;
+        justify-content: center;
+        img {
+          width: 80%;
+        }
+      }
+      h3 {
+        font-weight: normal;
+        color: $gray70;
+      }
+      .alert {
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: white;
+        font-size: 1rem;
+        background: $red;
+        border-radius: 0 7px 0 7px;
+        line-height: 0;
+        margin-top: -1px;
+      }
+    }
+  }
+}

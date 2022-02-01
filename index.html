@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home</title>
+        <!-- main-styles -->
+        <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css" />
+        <link rel="stylesheet" href="assets/css/slick-theme.css" />
+        <link rel="stylesheet" href="assets/css/slick.css" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://unpkg.com/file-upload-with-preview@4.1.0/dist/file-upload-with-preview.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+            crossorigin="anonymous"
+        />
+        <!--style-->
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body>
+        <!-- start navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="assets/images/home/logo.png" class="img-fluid" />
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                >
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html">من نحن</a>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a
+                                class="nav-link"
+                                href="#"
+                                id="btn__popUp"
+                                data-bs-target="#choiseModal"
+                                data-bs-toggle="modal"
+                            >
+                                إنشاء حساب
+                            </a>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a class="nav-link" href="/login.html">
+                                تسجيل دخول
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto nav-right">
+                        <button class="btn-subscribe btn">
+                            اشترك فى المسابقة
+                        </button>
+                        <button type="button" class="btn-subscribe__now btn">
+                            اشترك الآن
+                        </button>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end navbar -->
+        <!-- Start Modal Free -->
+        <div
+            class="modal fade create-modal"
+            id="choiseModal"
+            tabindex="-1"
+            aria-labelledby="choiseModal"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>إنشاء حساب جديد</h2>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="bg__popUp__content">
+                            <a href="register-as-teacher.html">
+                                <button class="bg__popUp__item">المعلم</button>
+                            </a>
+                            <a href="register-as-student.html">
+                                <button class="bg__popUp__item student">
+                                    الطالب
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Modal Free -->
+        <!-- Start Modal Free -->
+        <div
+            class="modal fade free-modal"
+            id="freeModal"
+            tabindex="-1"
+            aria-labelledby="freeModal"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="bg__popUp__content">
+                            <form action="">
+                                <div class="mb-3">
+                                    <input
+                                        id="name"
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="الاسم"
+                                    />
+                                </div>
+                                <div class="mb-3">
+                                    <input
+                                        id="name"
+                                        type="number"
+                                        style="direction: rtl"
+                                        class="form-control"
+                                        placeholder="رقم الهاتف"
+                                    />
+                                </div>
+                                <div class="body mb-3">
+                                    <h5>
+                                        أبناؤنا الأعزاء 🌷
+                                        <i class="fas fa-heart"></i>
+                                        🌷
+                                    </h5>
+                                    <p>
+                                        هذا حقكم أن تستخدمون الموقع مجانا طوال
+                                        العام الدراسي ونتمنى منكم ونربت على
+                                        أيديكم أن تحصلون على كل جوائز الموقع
+                                        مرات عديدة، هذه هي أمنيتنا التي نحتاج أن
+                                        تحققوها لنا.
+                                        <i class="fas fa-heart"></i>
+                                    </p>
+                                    <p>
+                                        أبناؤنا الأعزاء لاستلام كود الاشتراك
+                                        المجاني نرجو منكم أن ترسلوا إلينا:
+                                    </p>
+                                    <ul>
+                                        <ol>
+                                            1.تصوير شهادة ميلاد الطالب الأصلية
+                                            في فيديو واضح لا تقل مدته عن دقيقة.
+                                        </ol>
+                                        <ol>
+                                            2.تصوير شهادة الوفاة الأصلية في
+                                            فيديو واضح لا تقل مدته عن دقيقة. غفر
+                                            الله لوالدينا ورحمهم وأكرمهم بكرمه
+                                            تعالى
+                                        </ol>
+                                        <ol>
+                                            3.طلاب ذوي الهمم يتم فقط
+                                            تصويرالشهادة الطبية الأصلية الدالة
+                                            على ذلك أو كارنية الخدمات المتكاملة
+                                            وذلك في فيديو واضح لا تقل مدته عن
+                                            دقيقة.
+                                        </ol>
+                                    </ul>
+                                </div>
+                                <div class="mb-3">
+                                    <div
+                                        class="custom-file-container"
+                                        data-upload-id="myUniqueUploadId"
+                                    >
+                                        <label
+                                            for="file-upload-for-label-click"
+                                            class="w-100 mb-2"
+                                        >
+                                            <div
+                                                class="d-flex justify-content-between"
+                                            >
+                                                <div style="cursor: pointer">
+                                                    <i
+                                                        class="fas fa-plus-circle"
+                                                        style="color: #03a9f4"
+                                                    ></i>
+                                                    اختر الملف
+                                                </div>
+                                                <a
+                                                    href="javascript:void(0)"
+                                                    class="custom-file-container__image-clear"
+                                                    title="Clear Image"
+                                                >
+                                                    <i
+                                                        class="fas fa-trash-alt"
+                                                        style="color: #f44336"
+                                                    ></i>
+                                                </a>
+                                            </div>
+                                        </label>
+                                        <label
+                                            style="display: none"
+                                            class="custom-file-container__custom-file"
+                                        >
+                                            <input
+                                                type="file"
+                                                id="file-upload-for-label-click"
+                                                class="custom-file-container__custom-file__custom-file-input"
+                                                accept="*"
+                                                multiple
+                                                aria-label="Choose File"
+                                            />
+                                            <input
+                                                type="hidden"
+                                                name="MAX_FILE_SIZE"
+                                                value="10485760"
+                                            />
+                                            <span
+                                                class="custom-file-container__custom-file__custom-file-control"
+                                            ></span>
+                                        </label>
+                                        <div
+                                            class="custom-file-container__image-preview"
+                                            style="height: 150px; margin: 0"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="mb-2">
+                                    <textarea
+                                        placeholder="أكتب الرسالة التي تود أرسالها إلي الموقع هنا ..."
+                                        name=""
+                                        id=""
+                                        class="form-control"
+                                    ></textarea>
+                                </div>
+                                <div>
+                                    <button
+                                        type="submit"
+                                        class="submit_btn btn w-100"
+                                    >
+                                        إرسال
+                                        <img
+                                            src="assets/images/home/arrow-left.svg"
+                                            alt="send"
+                                        />
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Modal Free -->
+        <!--start home slide-->
+        <section class="home__slider after-navbar-section">
+            <div class="container">
+                <div class="home">
+                    <div class="slider__item">
+                        <div class="slider__item__card">
+                            <figure class="">
+                                <img src="assets/images/home/bg.png" alt="" />
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end school__classes-->
+        <!--end school__classes-->
+        <section class="school__classes padding-y">
+            <div class="container">
+                <div class="school__classes__items row justify-content-between">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="school__classes__item color-1">
+                            <h3 class="mt-2">الصف الثالث الثانوي العام</h3>
+                            <p>الشعبة العلمية - علوم</p>
+                            <div class="go-corner color-1" href="#">
+                                <div class="go-arrow">→</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="school__classes__item color-1">
+                            <h3 class="mt-2">الصف الثالث الثانوي العام</h3>
+                            <p>الشعبة العلمية - رياضيات</p>
+                            <div class="go-corner color-1" href="#">
+                                <div class="go-arrow">→</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="school__classes__item col mg color-1">
+                            <h3 class="mt-2">الصف الثالث الثانوي الأزهرى</h3>
+                            <p>الشعبة العلمية</p>
+                            <div class="go-corner color-1" href="#">
+                                <div class="go-arrow">→</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="school__classes__item col mg color-1">
+                            <h3 class="mt-2">الصف الثالث الثانوي الأزهرى</h3>
+                            <p>الشعبة الأدبية</p>
+                            <div class="go-corner color-1" href="#">
+                                <div class="go-arrow">→</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="school__classes__item color-2">
+                            <h3 class="mt-2">الصف الثانى الثانوي العام</h3>
+                            <p>الشعبة العلمية - علوم</p>
+                            <div class="go-corner color-2" href="#">
+                                <div class="go-arrow">→</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="school__classes__item color-2">
+                            <h3 class="mt-2">الصف الثانى الثانوي العام</h3>
+                            <p>الشعبة العلمية - رياضيات</p>
+                            <div class="go-corner color-2" href="#">
+                                <div class="go-arrow">→</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="school__classes__item mg color-2">
+                            <h3 class="mt-2">الصف الثانى الثانوي الأزهرى</h3>
+                            <p>الشعبة العلمية</p>
+                            <div class="go-corner color-2" href="#">
+                                <div class="go-arrow">→</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="school__classes__item mg color-2">
+                            <h3 class="mt-2">الصف الثانى الثانوي الأزهرى</h3>
+                            <p>الشعبة الأدبية</p>
+                            <div class="go-corner color-2" href="#">
+                                <div class="go-arrow">→</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="school__classes__item color-3">
+                            <h3 class="mt-2">الصف الأول الثانوي العام</h3>
+                            <p>الشعبة العلمية - علوم</p>
+                            <div class="go-corner color-3" href="#">
+                                <div class="go-arrow">→</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="school__classes__item color-3">
+                            <h3 class="mt-2">الصف الأول الثانوي العام</h3>
+                            <p>الشعبة العلمية - رياضيات</p>
+                            <div class="go-corner color-3" href="#">
+                                <div class="go-arrow">→</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="school__classes__item col mg color-3">
+                            <h3 class="mt-2">الصف الأول الثانوي الأزهرى</h3>
+                            <p>الشعبة العلمية</p>
+                            <div class="go-corner color-3" href="#">
+                                <div class="go-arrow">→</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="school__classes__item col mg color-3">
+                            <h3 class="mt-2">الصف الأول الثانوي الأزهرى</h3>
+                            <p>الشعبة الأدبية</p>
+                            <div class="go-corner color-3" href="#">
+                                <div class="go-arrow">→</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--end school__classes-->
+        <!--start  teachers button -->
+        <section class="center padd-y">
+            <button class="btn-span">
+                <svg
+                    width="180px"
+                    height="60px"
+                    viewBox="0 0 180 60"
+                    class="border"
+                >
+                    <polyline
+                        points="179,1 179,59 1,59 1,1 179,1"
+                        class="bg-line"
+                    />
+                    <polyline
+                        points="179,1 179,59 1,59 1,1 179,1"
+                        class="hl-line"
+                    />
+                </svg>
+                <span class="btn-span">المعلمون</span>
+            </button>
+        </section>
+        <!--end teachers button-->
+
+        <section class="site-free text-center padding-y">
+            <a
+                id="btn__popUp-free"
+                class="btn-use-free"
+                data-bs-toggle="modal"
+                data-bs-target="#freeModal"
+                style="color: #03a9f4"
+                href="#"
+            >
+                " يحق استخدام الموقع مجانا طوال العام لمن أحد والديه متوفي عند
+                الله، وأيضا للطلاب ذوي الهمم "
+            </a>
+        </section>
+        <section class="text-center padd-y">
+            <a href="contact.html" class="contact-us">تواصل معنا</a>
+        </section>
+        <!-- scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/slick.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/slider.js"></script>
+        <script src="assets/js/index.js"></script>
+        <script src="https://unpkg.com/file-upload-with-preview@4.1.0/dist/file-upload-with-preview.min.js"></script>
+        <script>
+            var upload = new FileUploadWithPreview("myUniqueUploadId");
+        </script>
+    </body>
+</html>

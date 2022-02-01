@@ -1,0 +1,13 @@
+.my-progress-bar {
+  height: 11px;
+  width: 100%;
+  background: white;
+  border-radius: 1rem;
+  margin-bottom: 11px;
+  .my-progress {
+    background: $blue;
+    width: 40%;
+    height: 100%;
+    border-radius: 1rem;
+  }
+}

@@ -1,0 +1,130 @@
+@import "./shared/shared";
+@import "./components/progress";
+@import "./components/achivements";
+@import "./components/achivement__item.scss";
+.select-content-page-1 {
+  .select-content {
+    border: 1px solid $border-gray;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    header {
+      h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: $gray70;
+        margin-bottom: 1rem;
+      }
+      p {
+        margin-bottom: 2rem !important;
+        color: $gray70;
+        font-size: 1.25rem;
+      }
+    }
+    &__items {
+      margin-bottom: 2rem;
+
+      .item {
+        position: relative;
+        &:hover {
+          figure::after {
+            display: block;
+          }
+          button {
+            display: block;
+          }
+        }
+        figure {
+          border-radius: 0.5rem;
+          overflow: hidden;
+          position: relative;
+          &::after {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            content: "";
+            background: rgba(#000, 0.75);
+            z-index: 1;
+            display: none;
+          }
+
+          img {
+            width: 100%;
+          }
+        }
+        button {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          border: 1px solid white;
+          padding: 0.75rem 2rem;
+          color: white;
+          z-index: 2;
+          display: none;
+        }
+      }
+    }
+    &__achivement {
+      border: 1px solid $border-gray;
+      border-radius: 0.5rem;
+      padding: 1rem 1rem 3rem;
+      form {
+        textarea {
+          background: $white-blue;
+          border: none;
+          padding: 0.8rem 1rem;
+          margin-bottom: 1rem;
+          border: 1px solid $white-blue !important;
+          transition: all 0.5s;
+          color: #acacac;
+          min-height: 150px;
+          max-height: 150px;
+          &.form-control::-moz-placeholder {
+            color: #acacac !important;
+          }
+          &.form-control:-ms-input-placeholder {
+            color: #acacac !important;
+          }
+          &.form-control::-webkit-input-placeholder {
+            color: #acacac !important;
+          }
+        }
+
+        textarea:focus {
+          border: 1px solid $border-gray !important;
+        }
+        button {
+          background: $blue;
+          color: white;
+          padding: 0.5rem 1rem;
+        }
+      }
+    }
+  }
+}
+@include to-desktop-sm {
+  .select-content-page-1 .select-content {
+    &__items .item button {
+      padding: 0.5rem 5px;
+    }
+  }
+}
+
+@include to-mobile-sm {
+  .select-content-page-1 .select-content {
+    header {
+      h2 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 1rem;
+        margin-bottom: 1rem !important;
+      }
+    }
+    .achievement .item:last-child {
+      margin-bottom: 1rem;
+    }
+  }
+}

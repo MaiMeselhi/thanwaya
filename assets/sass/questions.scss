@@ -1,0 +1,86 @@
+.questions {
+    .sub-header {
+        justify-content: flex-start !important;
+        margin-bottom: 1rem !important;
+    }
+    .nav-item {
+        flex: 1;
+        button {
+            width: 100%;
+        }
+    }
+    .nav-tabs .nav-link:focus,
+    .nav-tabs .nav-link:hover,
+    .nav-tabs .nav-link.active {
+        border-color: transparent transparent;
+        border-bottom: 1px solid #dee2e6;
+    }
+
+    .nav-tabs .nav-link.active {
+        background: #f9f9f9;
+    }
+
+    .question__field {
+        textarea.form-control {
+            min-height: 150px;
+        }
+        &.answer_field {
+            border-radius: 0.5rem;
+            border: 1px solid #dee2e6;
+            // margin: 0.5rem 0.75rem;
+            padding: 0.5rem;
+            .form-check {
+                margin-inline-start: 1rem;
+            }
+        }
+    }
+    .btn {
+        height: auto;
+        width: auto;
+        border: none;
+        .btn__add-sec {
+            background: red;
+        }
+        .btn__add-main {
+            background: blue;
+        }
+    }
+    label:not(.radio-label) {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    &__main {
+        .btn__wrapper {
+            display: flex;
+            flex-direction: row-reverse;
+            margin-top: 1rem;
+            button.btn.btn__add-main {
+                background: $blue !important;
+            }
+        }
+    }
+}
+.btn__add-sec {
+    background-color: #ff4500;
+    &:hover {
+        border: 1px solid #000;
+    }
+}
+.btn__add-main {
+    background-color: #ff8300;
+    &:hover {
+        border: 1px solid #000;
+    }
+}
+.btn-public {
+    background-color: #b7ac44;
+    &:hover {
+        border: 1px solid #000;
+    }
+}
+.btn-view {
+    background-color: #ff4500;
+    &:hover {
+        border: 1px solid #000;
+    }
+}

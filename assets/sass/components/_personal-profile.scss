@@ -1,0 +1,25 @@
+.profile-page {
+  .student__tab-content {
+    .item {
+      h3 {
+        font-size: 1.25rem;
+        color: gray;
+        margin-bottom: 2rem;
+      }
+    }
+    button.btn-submit {
+      color: white;
+      width: 50%;
+      background: $red;
+      margin: auto;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+  }
+}
+
+@include to-tablet-sm {
+  .profile-page .student__tab-content .item {
+    margin-bottom: 3rem;
+  }
+}

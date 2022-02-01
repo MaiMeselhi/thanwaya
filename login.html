@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home</title>
+        <!-- main-styles -->
+        <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css" />
+        <link rel="stylesheet" href="assets/css/slick-theme.css" />
+        <link rel="stylesheet" href="assets/css/slick.css" />
+        <!--style-->
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body class="login-body">
+        <!-- start navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="assets/images/home/logo.png" class="img-fluid" />
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                >
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html">من نحن</a>
+                        </li>
+
+                        <li class="nav-item mx-1">
+                            <a
+                                class="nav-link"
+                                href="#"
+                                id="btn__popUp"
+                                data-bs-target="#choiseModal"
+                                data-bs-toggle="modal"
+                            >
+                                إنشاء حساب
+                            </a>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a class="nav-link active" href="/login.html">
+                                تسجيل دخول
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto nav-right">
+                        <button class="btn-subscribe btn">
+                            اشترك فى المسابقة
+                        </button>
+
+                        <button type="button" class="btn-subscribe__now btn">
+                            اشترك الآن
+                        </button>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end navbar -->
+        <!-- Start Modal Free -->
+        <div
+            class="modal fade create-modal"
+            id="choiseModal"
+            tabindex="-1"
+            aria-labelledby="choiseModal"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>إنشاء حساب جديد</h2>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="bg__popUp__content">
+                            <a href="register-as-teacher.html">
+                                <button class="bg__popUp__item">المعلم</button>
+                            </a>
+                            <a href="register-as-student.html">
+                                <button class="bg__popUp__item student">
+                                    الطالب
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Modal Free -->
+        <!--start login__form-->
+        <section class="login-form after-navbar-section py-5">
+            <div class="container">
+                <header class="main-header">
+                    <span></span>
+                    <h2>مرحبا بك</h2>
+                </header>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="container"></div>
+                <div class="col-md-4">
+                    <figure class="d-flex align-items-center h-100">
+                        <img src="/assets/images/flower.jpg" alt="contact-us" />
+                    </figure>
+                </div>
+                <div class="col-md-4 login-form">
+                    <form class="needs-validation" novalidate>
+                        <input
+                            class="form-control"
+                            name="email"
+                            id="email"
+                            placeholder="البريد الإلكتروني"
+                            required
+                        />
+                        <div class="invalid-feedback my-2">
+                            " برجاء إدخال البريد الإلكتروني بطريقة صحيحة "
+                        </div>
+                        <div class="password">
+                            <input
+                                class="form-control"
+                                name="password"
+                                type="password"
+                                id="password"
+                                placeholder="كلمة المرور"
+                                required
+                            />
+                            <img
+                                class="show-password"
+                                src="/assets/images/icons/password.svg"
+                                alt="show-password"
+                            />
+                            <div class="invalid-feedback my-2">
+                                "برجاء إدخال أكثر من 6 حروف وأرقام ورموز"
+                            </div>
+                        </div>
+
+                        <div
+                            class="row justify-content-between align-items-center"
+                        >
+                            <div class="col-lg-4">
+                                <div class="checkbox row">
+                                    <label>
+                                        <input type="checkbox" />
+                                        تذكرني
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 forget-password">
+                                <!-- Button trigger modal -->
+                                <p
+                                    type="button"
+                                    class="btn-forget"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal"
+                                >
+                                    نسيت كلمة المرور
+                                </p>
+
+                                <!-- Modal -->
+                                <div
+                                    class="modal fade"
+                                    id="exampleModal"
+                                    tabindex="-1"
+                                    aria-labelledby="exampleModalLabel"
+                                    aria-hidden="true"
+                                >
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5
+                                                    class="modal-title"
+                                                    id="exampleModalLabel email"
+                                                    type="email"
+                                                >
+                                                    ادخل البريد الالكترونى
+                                                </h5>
+                                                <button
+                                                    type="button"
+                                                    class="btn-close"
+                                                    data-bs-dismiss="modal"
+                                                    aria-label="Close"
+                                                ></button>
+                                            </div>
+                                            <input
+                                                class="form-control"
+                                                placeholder="البريد الالكترونى"
+                                            />
+
+                                            <div class="modal-footer">
+                                                <button
+                                                    type="button"
+                                                    class="btn-footer-modal"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal2"
+                                                    id="send-forget"
+                                                >
+                                                    ارسال
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal -->
+                            <div
+                                class="modal fade"
+                                id="exampleModal2"
+                                tabindex="-1"
+                                aria-labelledby="exampleModalLabel"
+                                aria-hidden="true"
+                            >
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5
+                                                class="modal-title"
+                                                id="exampleModalLabel"
+                                            >
+                                                إنشاء كلمة مرور جديدة
+                                            </h5>
+                                            <button
+                                                type="button"
+                                                class="btn-close"
+                                                data-bs-dismiss="modal"
+                                                aria-label="Close"
+                                            ></button>
+                                        </div>
+                                        <div class="password">
+                                            <input
+                                                class="form-control"
+                                                name="text"
+                                                placeholder="كلمة السر الجديدة"
+                                            />
+
+                                            <img
+                                                src="assets/images/icons/eye-close.svg"
+                                            />
+                                        </div>
+                                        <div class="password">
+                                            <input
+                                                class="form-control"
+                                                name="text"
+                                                placeholder="تأكيد كلمه السر"
+                                            />
+
+                                            <img
+                                                src="assets/images/icons/eye-close.svg"
+                                            />
+                                        </div>
+
+                                        <div class="row justify-content-center">
+                                            <div class="col-md-4 col-sm-2">
+                                                <div
+                                                    class="modal-footer send-pass"
+                                                >
+                                                    <button
+                                                        type="button"
+                                                        class="btn-footer-modal btn-modal"
+                                                    >
+                                                        حفظ
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-2">
+                                                <div
+                                                    class="modal-footer send-pass"
+                                                >
+                                                    <button
+                                                        type="button"
+                                                        class="btn-footer-modal btn-modal"
+                                                    >
+                                                        تعديل
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn w-full">
+                            دخول
+                            <img
+                                src="assets/images/home/arrow-left.svg"
+                                alt=""
+                            />
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!--end login__form-->
+        <!-- scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/slick.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/index.js"></script>
+        <script src="assets/js/slider.js"></script>
+    </body>
+</html>

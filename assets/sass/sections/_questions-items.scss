@@ -1,0 +1,89 @@
+.questions-page {
+  .questions__items {
+    .questions-item {
+      background: $white-blue;
+      padding: 1.25rem;
+      border-radius: 15px;
+      margin-bottom: 1.25rem;
+      h5 {
+        color: $gray9f;
+        font-size: 1.25rem;
+      }
+      & > p {
+        font-size: 1.19rem;
+        color: $gray70;
+      }
+      form {
+        padding: 1rem;
+        margin-top: 1rem;
+        border-top: 1px solid $border-gray;
+        input[type="radio"] {
+          display: none;
+          &:checked + label > .number {
+            background: #00bcd4;
+            color: white;
+          }
+          &:checked + label > span {
+            color: $gray70;
+          }
+        }
+        div.radio-input-field {
+          margin-bottom: 1rem;
+        }
+        label.radio-input-label {
+          cursor: pointer;
+          .number {
+            color: white;
+            background: #dfe8f1;
+            line-height: 1;
+            text-align: center;
+            padding: 3px 10px;
+            border-radius: 5px;
+            margin-left: 1rem;
+          }
+          .answer {
+            color: $gray9f;
+            font-size: 1.25rem;
+            font-weight: 200;
+          }
+        }
+      }
+    }
+  }
+  button.questions__button-show {
+    width: 100%;
+    border: none;
+    padding: 1rem 0;
+    border-radius: 1rem;
+    background: $red;
+    color: white;
+    font-size: 2rem;
+    img {
+      margin-right: 1rem;
+    }
+  }
+}
+
+@include to-tablet-sm {
+  .questions-page {
+    .questions__items .questions-item {
+      p,
+      h5,
+      form {
+        .radio-input-label .answer {
+          font-size: 1rem !important;
+        }
+      }
+      form {
+        margin-top: 2rem;
+      }
+    }
+    button.questions__button-show {
+      font-size: 1.5rem;
+      padding: 0.5rem 0;
+      img {
+        width: 1.25rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+.question-answer-page {
+  .question-answer {
+    &__wrapper {
+      padding: 20px 20px 50px;
+      border: 1px solid $border-gray;
+      border-radius: 7px;
+      iframe {
+        width: 100%;
+        min-height: 450px;
+        border-radius: 0.5rem;
+      }
+      header {
+        h2 {
+          font-size: 40px;
+          font-weight: bold;
+          color: $gray70;
+          margin-bottom: 2rem;
+        }
+      }
+      footer {
+        text-align: center;
+        p {
+          font-size: 1.5rem;
+          color: $gray70;
+          margin-bottom: 2.2rem !important;
+        }
+        button.whatsapp-btn {
+          background: #2cd24b;
+          font-size: 1.25rem;
+          color: white;
+          padding: 0.75rem 4.0625rem;
+          img {
+            margin-right: 0.625rem;
+          }
+        }
+      }
+    }
+  }
+}
+@include tablet {
+  .question-answer-page {
+    .question-answer {
+      iframe {
+        min-height: 350px;
+        border-radius: 0.5rem;
+      }
+      &__wrapper {
+        header {
+          h2 {
+            font-size: 1.52rem;
+            margin-bottom: 1rem;
+          }
+        }
+        footer {
+          p {
+            font-size: 1rem;
+          }
+          button.whatsapp-btn {
+            padding: 0.5rem 2rem;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include to-tablet-sm {
+  .question-answer-page {
+    .question-answer {
+      iframe {
+        min-height: 200px;
+        border-radius: 0.5rem;
+      }
+      &__wrapper {
+        header {
+          h2 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+          }
+        }
+        footer {
+          p {
+            font-size: 0.75rem;
+            margin-bottom: 0.75rem !important;
+          }
+          button.whatsapp-btn {
+            padding: 0.5rem 2rem;
+            font-size: 1rem;
+            img {
+              margin-right: 0.625rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

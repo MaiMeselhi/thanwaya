@@ -1,0 +1,19 @@
+.create-modal {
+    .bg__popUp__content {
+        .bg__popUp__item {
+            border: 1px solid #d6d6d6;
+            background: $primary;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 15rem;
+            height: 3rem;
+            margin: 0.5rem auto;
+            border-radius: 4px;
+        }
+        .bg__popUp__item.student {
+            background-color: #ffc600;
+        }
+    }
+}

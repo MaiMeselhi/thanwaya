@@ -1,0 +1,98 @@
+.home-login-page {
+    .best-students {
+        &__section.sec {
+            margin-top: 0;
+        }
+    }
+}
+.best-students {
+    .student {
+        text-align: center;
+        color: $gray70;
+
+        &__card {
+            margin-left: 0.5rem !important;
+            margin-right: 0.5rem !important;
+            margin: 0 auto;
+            border: 1px solid $border-gray;
+            border-radius: 7px;
+            padding: 2rem 1.5rem;
+            figure {
+                width: 100%;
+                height: 140px;
+                position: relative;
+                margin-bottom: 1.375rem;
+                img {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    &.person {
+                        width: 40%;
+                        border-radius: 50%;
+                    }
+                    &.crown-frame {
+                        width: 70%;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+
+        h3 {
+            font-size: 1.875rem;
+            margin-bottom: 1.25rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+}
+[dir="rtl"] .slick-prev:before {
+    color: black;
+    content: url(/assets/images/icons/arrow-rigth.svg);
+}
+[dir="rtl"] .slick-next:before {
+    content: url(/assets/images/icons/arrow-left.svg);
+    color: #333;
+}
+
+@include mobile-xs {
+    .slider-wrapper {
+        .slider {
+            width: 100%;
+            figure {
+                margin-bottom: 2.5rem !important;
+                img {
+                    &.person {
+                        width: 32%;
+                    }
+                    &.crown-frame {
+                        width: 60%;
+                    }
+                }
+            }
+        }
+        .student p {
+            font-size: 1rem;
+        }
+    }
+}
+@include mobile-sm {
+    .slider-wrapper {
+        .slider {
+            width: 100%;
+            figure {
+                margin-bottom: 3rem !important;
+                img {
+                    &.person {
+                        width: 20%;
+                    }
+                    &.crown-frame {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
