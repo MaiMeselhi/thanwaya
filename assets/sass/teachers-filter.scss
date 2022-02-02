@@ -122,9 +122,6 @@
     background: transparent;
 }
 
-.row {
-    --bs-gutter-x: 0;
-}
 .filter-sec {
     display: none;
 }
@@ -171,6 +168,9 @@
         transform: scale(0.5);
         display: none;
     }
+}
+.horizontal-row {
+    --bs-gutter-x: 0;
 }
 @include tablet {
     .product-inner {

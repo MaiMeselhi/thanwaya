@@ -2730,10 +2730,6 @@ header.main-header h2 {
   background: transparent;
 }
 
-.row {
-  --bs-gutter-x: 0;
-}
-
 .filter-sec {
   display: none;
 }
@@ -2789,6 +2785,10 @@ header.main-header h2 {
     display: none;
   }
 }
+.horizontal-row {
+  --bs-gutter-x: 0;
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
   .product-inner {
     margin: 5px !important;
