@@ -63,7 +63,7 @@ const data = [
     },
 ];
 
-var products = "",
+var teachers = "",
     names = "",
     subjects = "",
     mobiles = "",
@@ -82,9 +82,9 @@ for (var i = 0; i < data.length; i++) {
         rawgrade = parseInt(rawgrade.replace(",", "")),
         image = data[i].image;
 
-    //create product cards
-    products +=
-        "<div class='col-lg-4 col-md-6 col-sm-6 product' data-name='" +
+    //create teacher cards
+    teachers +=
+        "<div class='col-lg-4 col-md-6 col-sm-6 teacher' data-name='" +
         name +
         "' data-subject='" +
         subject +
@@ -96,7 +96,7 @@ for (var i = 0; i < data.length; i++) {
         center +
         "' data-grade='" +
         grade +
-        "'><div class='product-inner text-center '><img src='" +
+        "'><div class='teacher-inner text-center '><img src='" +
         image +
         "'>" +
         ` <h5> <i class="fas fa-user-shield"></i>${name} </h5> ` +
@@ -159,7 +159,7 @@ for (var i = 0; i < data.length; i++) {
     }
 }
 
-$("#products").html(products);
+$("#teachers").html(teachers);
 $(".filter-name").append(names);
 $(".filter-subject").append(subjects);
 $(".filter-mobile").append(mobiles);
@@ -189,10 +189,10 @@ $(".filter").on("change", function () {
     }
 
     if (filters == "") {
-        $(".product").show();
+        $(".teacher").show();
     } else {
-        $(".product").hide();
-        $(".product").hide().filter(filters).show();
+        $(".teacher").hide();
+        $(".teacher").hide().filter(filters).show();
     }
 });
 
@@ -201,8 +201,8 @@ $("#search-form").submit(function (e) {
     e.preventDefault();
     var query = $("#search-form input").val().toLowerCase();
 
-    $(".product").hide();
-    $(".product").each(function () {
+    $(".teacher").hide();
+    $(".teacher").each(function () {
         var name = $(this).data("name").toLowerCase(),
             subject = $(this).data("subject").toLowerCase(),
             mobile = $(this).data("mobile").toLowerCase(),
@@ -222,6 +222,5 @@ $("#search-form").submit(function (e) {
 $(document).ready(function () {
     $(".filter-sec").click(function () {
         $(".filter-hidden").toggleClass("hidden");
-        console.log("filtered");
     });
 });

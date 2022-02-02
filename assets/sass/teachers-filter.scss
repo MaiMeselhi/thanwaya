@@ -1,8 +1,8 @@
 @import "./shared/media-mixin";
-#products {
+#teachers {
     font-family: cairo;
 
-    .product-inner {
+    .teacher-inner {
         display: block;
         font-size: 1rem;
         color: #868b8e;
@@ -46,7 +46,7 @@
         width: 50%;
     }
 
-    .product-inner:hover {
+    .teacher-inner:hover {
         transition: all 0.2s ease-out;
         box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
         top: -4px;
@@ -127,7 +127,7 @@
 }
 
 @include mobile-xs {
-    .product-inner {
+    .teacher-inner {
         width: 80%;
         margin: 0 auto 20px auto;
     }
@@ -149,7 +149,7 @@
     }
 }
 @include mobile-sm {
-    .product-inner {
+    .teacher-inner {
         margin-bottom: 10px !important;
     }
     i {
@@ -173,7 +173,7 @@
     --bs-gutter-x: 0;
 }
 @include tablet {
-    .product-inner {
+    .teacher-inner {
         margin: 5px !important;
     }
     .filter {
@@ -184,7 +184,7 @@
     }
 }
 @include desktop {
-    .product-inner {
+    .teacher-inner {
         margin: 5px !important;
     }
     .filter {
@@ -196,7 +196,7 @@
 }
 
 @include desktop-lg {
-    .product-inner {
+    .teacher-inner {
         margin-bottom: 50px !important;
         h5 {
             font-size: 1.1rem;
