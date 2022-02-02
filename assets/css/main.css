@@ -1337,6 +1337,7 @@ input[type=file] {
 }
 .home .slider__item .slider__item__card {
   position: relative;
+  margin-top: 55px;
 }
 .home .slider__item .slider__item__card figure {
   width: 50%;
