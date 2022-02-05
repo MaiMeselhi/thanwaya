@@ -2686,7 +2686,6 @@ header.main-header h2 {
   background-color: #fff;
   max-width: 262px;
   border-radius: 4px;
-  padding: 20px 10px;
   margin-bottom: 30px;
   text-decoration: none;
   z-index: 0;
@@ -2701,24 +2700,36 @@ header.main-header h2 {
   color: #707070;
   font-weight: bold;
   text-align: start;
+  padding-inline-start: 1rem;
 }
-#teachers .teacher-inner h5 i {
-  color: #03a9f4;
-  margin-inline: 1rem;
+#teachers .teacher-inner h5 .fa-heart {
+  color: red;
+  font-size: 1.2rem;
+  padding-inline: 1rem;
 }
-#teachers .teacher-inner p {
+#teachers .teacher-inner .filter-text {
   margin: 0 !important;
-  padding-top: 0.5rem;
+  padding: 0.5rem 0;
   text-align: start;
-  font-size: 0.8rem;
+  padding-inline-start: 0.5rem;
+  font-size: 1rem;
 }
-#teachers .teacher-inner p i {
+#teachers .teacher-inner .filter-text ._icon {
   color: #03a9f4;
-  margin-inline-start: 1.2rem;
-  margin-inline-end: 1rem;
+  padding-inline: 0.5rem;
+}
+#teachers .teacher-inner .teach-icons {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  padding: 5px 10px;
+}
+#teachers .teacher-inner .teach-icons a {
+  color: #2eb086;
+  padding-top: 1rem;
+  padding-inline: 2rem;
 }
 #teachers img {
-  width: 50%;
+  width: 100%;
+  padding: 20px 10px;
 }
 #teachers .teacher-inner:hover {
   transition: all 0.2s ease-out;
@@ -2730,6 +2741,10 @@ header.main-header h2 {
 
 #filters form .form-group .filter-subject {
   margin-bottom: 2.5rem;
+}
+#filters .radio-select {
+  padding: 1rem 0;
+  margin: 1rem 0 !important;
 }
 
 .search {
@@ -2787,13 +2802,22 @@ header.main-header h2 {
   display: none;
 }
 
+.radio-select {
+  margin: 1rem 0;
+}
+.radio-select .radio-label {
+  padding: 0.2rem 0;
+  color: #707070;
+  font-weight: bold;
+}
+
 @media (min-width: 320px) and (max-width: 567px) {
   .teacher-inner {
     width: 80%;
     margin: 0 auto 20px auto;
   }
 
-  i {
+  ._icon {
     padding-inline-start: 0.5rem;
   }
 
@@ -2818,7 +2842,7 @@ header.main-header h2 {
     margin-bottom: 10px !important;
   }
 
-  i {
+  ._icon {
     padding-inline-start: 0.5rem;
   }
 
@@ -2875,7 +2899,7 @@ header.main-header h2 {
   .teacher-inner h5 {
     font-size: 1.1rem;
   }
-  .teacher-inner p {
+  .teacher-inner .filter-text {
     font-size: 1rem;
   }
 

@@ -1,65 +1,67 @@
 const data = [
     {
-        name: "الاستاذ/ طارق محمد",
-        subject: "مادة الرياضيات",
-
-        mobile: "Electric",
-        grade: "الصف الأول الثانوي",
-        area: "الاسكندريه",
-        center: "مكة",
-        image: "assets/images/teacher.jpg",
-    },
-    {
         name: "الاستاذ/ ايمن عبد الله",
         subject: "مادة الفيزياء",
 
-        mobile: "Electric",
+        mobile: "49123657894",
         grade: "الصف الأول الثانوي",
         area: "القاهرة",
+        center: "بسملة",
+        place: "المعادى",
+        image: "assets/images/teachers.jpg",
+    },
+    {
+        name: "الاستاذ/ طارق محمد",
+        subject: "مادة الرياضيات",
+        place: "المعادى",
+        mobile: "123456789101",
+        grade: "الصف الأول الثانوي",
+        area: "الاسكندريه",
         center: "مكة",
-
-        image: "assets/images/teacher.jpg",
+        image: "assets/images/teachers.jpg",
+    },
+    {
+        name: "الاستاذ/عدلى أحمد",
+        subject: "مادة التاريخ",
+        mobile: "65478123490",
+        grade: "الصف الثاني الثانوي",
+        area: "الاسكندريه",
+        center: "بسملة",
+        place: "المعادى",
+        image: "assets/images/teachers.jpg",
+    },
+    {
+        name: "الاستاذة/عزة محمد",
+        subject: "مادة الأحياء",
+        mobile: "32164985017",
+        grade: "الصف الثالث الثانوي",
+        area: "القاهرة",
+        center: "بسملة",
+        place: "مدينة نصر",
+        image: "assets/images/teachers.jpg",
     },
     {
         name: "الاستاذ/ عمر عبد الله",
         subject: "مادة الفيزياء",
         center: "مكة",
+        place: "مدينة نصر",
 
-        mobile: "Electric",
+        mobile: "46987523154",
         grade: "الصف الأول الثانوي",
         area: "الاسكندريه",
 
-        image: "assets/images/teacher.jpg",
+        image: "assets/images/teachers.jpg",
     },
     {
         name: "الاستاذ/ محمود زيدان",
         center: "بسملة",
         subject: "مادة التاريخ",
-        mobile: "Electric",
+        mobile: "65478123496",
         grade: "الصف الثالث الثانوي",
         area: "الاسكندريه",
+        place: "مدينة نصر",
 
-        image: "assets/images/teacher.jpg",
-    },
-    {
-        name: "الاستاذ/عدلى أحمد",
-        subject: "مادة التاريخ",
-        mobile: "Electric",
-        grade: "الصف الثاني الثانوي",
-        area: "الاسكندريه",
-        center: "بسملة",
-
-        image: "assets/images/teacher.jpg",
-    },
-    {
-        name: "الاستاذة/عزة محمد",
-        subject: "مادة الأحياء",
-        mobile: "Electric",
-        grade: "الصف الثالث الثانوي",
-        area: "القاهرة",
-        center: "بسملة",
-
-        image: "assets/images/teacher.jpg",
+        image: "assets/images/teachers.jpg",
     },
 ];
 
@@ -69,6 +71,7 @@ var teachers = "",
     mobiles = "",
     grades = "",
     areas = "";
+places = "";
 centers = "";
 
 for (var i = 0; i < data.length; i++) {
@@ -78,13 +81,14 @@ for (var i = 0; i < data.length; i++) {
         grade = data[i].grade,
         area = data[i].area,
         center = data[i].center,
+        place = data[i].place,
         rawgrade = grade.replace("$", ""),
         rawgrade = parseInt(rawgrade.replace(",", "")),
         image = data[i].image;
 
     //create teacher cards
     teachers +=
-        "<div class='col-lg-4 col-md-6 col-sm-6 teacher' data-name='" +
+        "<div class='col-lg-4 col-md-6 col-sm-6 teacher ' data-name='" +
         name +
         "' data-subject='" +
         subject +
@@ -96,14 +100,32 @@ for (var i = 0; i < data.length; i++) {
         center +
         "' data-grade='" +
         grade +
-        "'><div class='teacher-inner text-center '><img src='" +
+        "' data-place='" +
+        place +
+        "'><div class='teacher-inner '><img src='" +
         image +
         "'>" +
-        ` <h5> <i class="fas fa-user-shield"></i>${name} </h5> ` +
+        `<div class="d-flex align-items-center"> <h5>${name}<i onclick="myFunction(this)"  class="_icon fal fa-heart"></i>
+        </h5> </div>` +
         " " +
-        `<p> <i class="fas fa-bookmark"></i>${subject}</p>` +
+        `<p class="filter-text" ><i class="_icon  fas fa-bookmark"></i>${subject}</p>` +
+        " " +
+        `<p class="filter-text"><i class="_icon  fas fa-mobile-alt"></i>${mobile}</p>` +
         "" +
-        `<p><i class="fas fa-user-graduate"></i>${grade}</p>` +
+        `
+        <div class="d-flex teach-icons justify-content-between">
+            <a  href="#">
+                <i class="fas fa-user-plus"></i>
+                <span>500</span>
+            </a>
+
+            <a href="#">
+                <i class="fas fa-question-circle"></i>
+                <span>2000</span>
+                </a>
+                </div>
+
+  ` +
         "</div></div>";
 
     //create dropdown of names
@@ -131,7 +153,13 @@ for (var i = 0; i < data.length; i++) {
     ) {
         mobiles += "<option value='" + mobile + "'>" + mobile + "</option>";
     }
-
+    if (
+        places.indexOf(
+            "<option value='" + place + "'>" + place + "</option>"
+        ) == -1
+    ) {
+        places += "<option value='" + place + "'>" + place + "</option>";
+    }
     //create dropdown of grades
     if (
         grades.indexOf(
@@ -166,6 +194,7 @@ $(".filter-mobile").append(mobiles);
 $(".filter-grade").append(grades);
 $(".filter-area").append(areas);
 $(".filter-center").append(centers);
+$(".filter-place").append(places);
 
 var filtersObject = {};
 
@@ -205,13 +234,11 @@ $("#search-form").submit(function (e) {
     $(".teacher").each(function () {
         var name = $(this).data("name").toLowerCase(),
             subject = $(this).data("subject").toLowerCase(),
-            mobile = $(this).data("mobile").toLowerCase(),
             grade = $(this).data("grade").toLowerCase();
 
         if (
             name.indexOf(query) > -1 ||
             subject.indexOf(query) > -1 ||
-            mobile.indexOf(query) > -1 ||
             grade.indexOf(query) > -1
         ) {
             $(this).show();
@@ -224,3 +251,8 @@ $(document).ready(function () {
         $(".filter-hidden").toggleClass("hidden");
     });
 });
+
+function myFunction(x) {
+    x.classList.toggle("fas");
+    console.log("ok");
+}
