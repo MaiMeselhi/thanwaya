@@ -7,7 +7,7 @@
     top: 0px;
     position: relative;
     background-color: #f2f8f9;
-    width: 50%;
+
     text-decoration: none;
     z-index: 0;
     overflow: hidden;
@@ -166,5 +166,84 @@
     i {
         color: #03a9f4;
         padding-inline-end: 10px;
+    }
+}
+.video {
+    width: 100%;
+    height: 315px;
+}
+
+@include mobile-xs {
+    .teacher-profile-right {
+        .subject-overview__teacher {
+            h3 {
+                font-size: 1rem;
+            }
+            .teacher {
+                h5 {
+                    font-size: 1rem;
+                }
+                p {
+                    font-size: 0.7rem;
+                    padding: 0;
+                }
+            }
+            .teacher-icons {
+                padding-inline-start: 85px;
+            }
+        }
+
+        .main-section__items {
+            .teacher__p {
+                font-size: 0.7rem;
+            }
+        }
+    }
+}
+
+@include mobile-sm {
+    .teacher-profile-right {
+        .subject-overview__teacher {
+            h3 {
+                font-size: 1rem;
+            }
+        }
+        .teacher {
+            h5 {
+                font-size: 1rem;
+            }
+            p {
+                font-size: 0.8rem;
+                padding: 0;
+            }
+        }
+        .main-section__items {
+            .teacher__p {
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+@include tablet {
+    .teacher-profile-right {
+        .subject-overview__teacher {
+            h3 {
+                font-size: 1.1rem;
+            }
+        }
+        .teacher {
+            h5 {
+                font-size: 1.1rem;
+            }
+            p {
+                font-size: 0.8rem;
+                padding: 0;
+            }
+        }
+        .main-section__items {
+            .teacher__p {
+                font-size: 0.8rem;
+            }
+        }
     }
 }

@@ -101,7 +101,7 @@ html {
 }
 @media (min-width: 568px) and (max-width: 767px) {
   .slider-wrapper {
-    width: 90%;
+    width: 95%;
   }
 }
 /*End */
@@ -918,7 +918,7 @@ footer .mainFooter-down .youtube:hover {
 }
 @media (min-width: 568px) and (max-width: 767px) {
   .profile-page .slider-wrapper {
-    width: 90%;
+    width: 95%;
   }
 }
 .profile-page .navbar {
