@@ -3815,4 +3815,69 @@ header.main-header h2 {
   border: 1px solid #000;
 }
 
+.bg {
+  background-image: url("../images/bg.jpg");
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sub-competion .sub-competion-items p {
+  font-weight: bold;
+}
+.sub-competion .sub-competion-items h5 {
+  font-weight: bold;
+  padding: 0.5rem 0;
+}
+.sub-competion .sub-competion-items .first-header {
+  color: #f4a442;
+  font-weight: bold;
+}
+.sub-competion .sub-competion-items .awards .award-header li .award-icon {
+  color: #03a9f4;
+  font-size: 1.5rem;
+  padding: 0 5px;
+}
+.sub-competion .sub-competion-items .awards .award-header li .award {
+  color: #03a9f4;
+  font-weight: bold;
+}
+.sub-competion .sub-competion-items .awards .award-header li .award-price {
+  color: #2eb086;
+  font-weight: bold;
+}
+.sub-competion .important-warning {
+  border: 1px solid red;
+  padding: 1rem;
+}
+.sub-competion .important-warning h5 {
+  font-weight: bold;
+  color: red;
+}
+.sub-competion .future-award span:first-child {
+  color: #03a9f4;
+  font-weight: bold;
+}
+.sub-competion .future-award span {
+  color: #2eb086;
+  font-weight: bold;
+}
+.sub-competion .future-award p {
+  font-weight: bold;
+}
+.sub-competion .start-competion {
+  border: 1px solid #2eb086;
+  background: #2eb086 !important;
+  color: #fff !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8rem;
+  height: 3rem;
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home</title>
+        <!-- main-styles -->
+        <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css" />
+        <link rel="stylesheet" href="assets/css/slick-theme.css" />
+        <link rel="stylesheet" href="assets/css/slick.css" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://unpkg.com/file-upload-with-preview@4.1.0/dist/file-upload-with-preview.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+            crossorigin="anonymous"
+        />
+        <!--style-->
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body class="bg">
+        <!-- start navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="assets/images/home/logo.png" class="img-fluid" />
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                >
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html">من نحن</a>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a
+                                class="nav-link"
+                                href="#"
+                                id="btn__popUp"
+                                data-bs-target="#choiseModal"
+                                data-bs-toggle="modal"
+                            >
+                                إنشاء حساب
+                            </a>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a class="nav-link" href="/login.html">
+                                تسجيل دخول
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto nav-right">
+                        <button class="btn-subscribe btn">
+                            اشترك فى المسابقة
+                        </button>
+                        <button type="button" class="btn-subscribe__now btn">
+                            <a href="sub-now.html">اشترك الآن</a>
+                        </button>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end navbar -->
+        <!-- Start Modal Free -->
+        <div
+            class="modal fade create-modal"
+            id="choiseModal"
+            tabindex="-1"
+            aria-labelledby="choiseModal"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>إنشاء حساب جديد</h2>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="bg__popUp__content">
+                            <a href="register-as-teacher.html">
+                                <button class="bg__popUp__item">المعلم</button>
+                            </a>
+                            <a href="register-as-student.html">
+                                <button class="bg__popUp__item student">
+                                    الطالب
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Modal Free -->
+        <!--start sub-competion-->
+
+        <section class="sub-competion after-navbar-section py-5">
+            <header class="main-header pt-5">
+                <span></span>
+                <h2>حصّل أعلى الدرجات العلمية وساعد أسرتك</h2>
+            </header>
+            <div class="container">
+                <div class="col-md-8 m-auto">
+                    <div class="sub-competion-items text-center">
+                        <h5>أجب على 7000 سؤال</h5>
+                        <h5 class="first-header">
+                            هذه الجوائز موجهه لطلاب الصف الأول والثانى والثالث
+                            الثانوي
+                        </h5>
+                        <h5>
+                            علمًا أنه سيتم احتساب الاسئله بدءا من الضغط على زر
+                            "أبدا المسابقة"
+                        </h5>
+                        <div class="awards">
+                            <ul class="award-header">
+                                <li>
+                                    <div class="text-start">
+                                        <i class="fas fa-award award-icon"></i>
+                                        <span class="award">
+                                            الجائزة الأولى:
+                                        </span>
+                                        <span class="award-price mx-1">
+                                            قيمة الجائزة خمسة عشر ألف جنيه مصري
+                                        </span>
+                                    </div>
+                                    <p class="text-start">
+                                        يحصل عليها كل طالب أجاب على 98 % من
+                                        الامتحانات التى أجاب عليها
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="text-start">
+                                        <i class="fas fa-award award-icon"></i>
+                                        <span class="award">
+                                            الجائزة الثانية:
+                                        </span>
+                                        <span class="award-price">
+                                            قيمة الجائزة عشرة آلاف جنيه مصري
+                                        </span>
+                                    </div>
+                                    <p class="text-start">
+                                        يحصل عليها كل طالب أجاب على 96.5 % من
+                                        الامتحانات التى أجاب عليها
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="text-start">
+                                        <i class="fas fa-award award-icon"></i>
+                                        <span class="award">
+                                            الجائزة الثالثة:
+                                        </span>
+                                        <span class="award-price">
+                                            قيمة الجائزة خمسة آلاف جنيه مصري
+                                        </span>
+                                    </div>
+                                    <p class="text-start">
+                                        يحصل عليها كل طالب أجاب على 95 % من
+                                        الامتحانات التى أجاب عليها
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="important-warning">
+                        <h5>تنويهات هامة جداً :</h5>
+                        <ul>
+                            <li>
+                                1-سوف يتم إجراء امتحان ورقي لكل طالب يجتاز
+                                المسابقة وذلك حرصتاً على وصول الجائزة لمن
+                                يستحقها.
+                            </li>
+                            <li>
+                                2- سيتم إعداد الامتحان الورقي على النصف الأول من
+                                المنهج الدراسي وذلك للطلاب الذين ستعقد لهم
+                                الامتحانات حتى يوم 1 أبريل 2022.وبعد هذا التاريخ
+                                يعقد الامتحان الورقي على المنهج كاملا
+                            </li>
+                            <li>
+                                3- يستطيع الطالب الخروج من المسابقة كيفما يشاء
+                                ،ويمكنه العودة للمشاركة مرة أخرى فى أى وقت ،لكن
+                                يجب أن ينتبه أنه لن يتم أحتساب أى اسئلة قام
+                                باجابتها من قبل ،فقط تحتسب الأسئلة التى سيقوم
+                                الطالب بالاجابة عليها لأول مرة.
+                            </li>
+                            <li>
+                                4-بالنسبة لطلاب الصف الثالث الثانوي يشترط
+                                الاجابه على 1000 سؤال كحد أدنى من كل مادة
+                                دراسية.
+                            </li>
+                            <li>
+                                5-بالنسبة لطلاب الصف الثاني الثانوي يشترط
+                                الاجابة على 850 سؤال كحد أدنى من كل مادة دراسية
+                                .
+                            </li>
+                            <li>
+                                6-بالنسبة لطلاب الصف الأول الثانوي يشترط الاجابه
+                                على 700 سؤال كحد أدنى من كل مادة دراسية.
+                            </li>
+                            <li>
+                                7-نتمني ونطلب من كل طالب قد حصل على الجائزة مرة
+                                أن يشترك مجدادا فى المسابقة ويحصل عليها مرات
+                                عديدة أخرى
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="future-award py-3">
+                        <div class="text-start">
+                            <span>جائزة علماء المستقبل:</span>
+                            <span>سوف يتم تحديد قيمة هذه الجائزة لاحقا</span>
+                        </div>
+                        <p>
+                            تمنح لأعضاء الموقع الذين يصبحون من أوائل الجمهورية
+                            وللطلاب الذين يلتحقون بكلية الطب البشري (الجامعات
+                            الحكومية فقط).
+                        </p>
+                    </div>
+                </div>
+                <h5 class="text-center">هذه رسالة وبذرة أغرسها في روحك</h5>
+                <h5 class="text-center">
+                    <<غذاء أنت، أنت من سيقود العالم الى الخير والأخلاق والجمال
+                    والحب ..>>
+                </h5>
+            </div>
+            <button class="m-auto d-block my-5 start-competion">
+                أبدأ المسابقة
+            </button>
+        </section>
+
+        <!--end sub competion-->
+    </body>
+</html>

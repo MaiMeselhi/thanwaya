@@ -1,0 +1,77 @@
+.bg {
+    background-image: url("../images/bg.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sub-competion {
+    .sub-competion-items {
+        p {
+            font-weight: bold;
+        }
+        h5 {
+            font-weight: bold;
+            padding: 0.5rem 0;
+        }
+        .first-header {
+            color: #f4a442;
+            font-weight: bold;
+        }
+        .awards {
+            .award-header {
+                li {
+                    .award-icon {
+                        color: $primary;
+                        font-size: 1.5rem;
+                        padding: 0 5px;
+                    }
+                    .award {
+                        color: $primary;
+                        font-weight: bold;
+                    }
+                    .award-price {
+                        color: #2eb086;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+    .important-warning {
+        border: 1px solid red;
+        padding: 1rem;
+        h5 {
+            font-weight: bold;
+            color: red;
+        }
+    }
+    .future-award {
+        span:first-child {
+            color: $primary;
+            font-weight: bold;
+        }
+        span {
+            color: #2eb086;
+            font-weight: bold;
+        }
+        p {
+            font-weight: bold;
+        }
+    }
+    .start-competion {
+        border: 1px solid #2eb086;
+        background: #2eb086 !important;
+        color: #fff !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 8rem;
+        height: 3rem;
+        font-weight: bold;
+    }
+}
