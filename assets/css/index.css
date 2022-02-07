@@ -55,7 +55,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: #145da0;
 }
 
@@ -637,7 +637,7 @@ header.main-header span {
 header.main-header h2 {
   font-weight: bold;
   font-size: 2.5rem;
-  color: #000;
+  color: #0c2461;
 }
 
 .text {
@@ -796,96 +796,29 @@ header.main-header h2 {
   margin-right: 0.5rem;
 }
 
-.why-we__content,
-.uniquely__content {
-  height: 97%;
-  border-radius: 0.5rem;
-  overflow: hidden;
+.sub-now .sub-items .sub-item h3 {
+  font-weight: bold;
+  color: #fa776a;
 }
-.why-we__items .item,
-.uniquely__items .item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
-  flex-direction: column;
-  border: 1px solid #d8d8d8;
-  border-radius: 10px;
-  min-height: 280px;
+.sub-now .sub-items .sub-item .payment,
+.sub-now .sub-items .sub-item .sub {
+  padding: 1rem 0;
+  color: #145da0;
 }
-.why-we__items .item img,
-.uniquely__items .item img {
-  width: 130px;
-  margin-bottom: 2rem;
+.sub-now .warning p {
+  color: #000;
 }
-.why-we .why-we__content,
-.uniquely .why-we__content {
-  background: url("/assets/images/home/why-we.png") no-repeat center center;
-  position: relative;
-  background-size: cover;
+.sub-now .warning p #first {
+  color: red;
 }
-.why-we .why-we__content p,
-.uniquely .why-we__content p {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 300px;
-  color: white;
-  background: #005e6b;
-  background: linear-gradient(0deg, #005e6b 0%, rgba(0, 184, 208, 0.01) 100%);
-  display: flex;
-  align-items: flex-end;
-  padding: 0 1rem 3.125rem;
-  font-size: 1.4rem;
-}
-.why-we .why-we__items .item figcaption,
-.uniquely .why-we__items .item figcaption {
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-  color: #707070;
+.sub-now .warning p a {
+  border-bottom: 1px solid #03a9f4;
+  color: #03a9f4;
 }
 
-.btn_useFree {
-  background-color: #03a9f4;
-  color: white;
-  border: 1px solid #03a9f4;
-  width: 12rem;
-  height: 3rem;
-  border-radius: 1rem;
-  margin-inline-end: 0.5rem;
-}
-
-.why-we figure {
-  width: 85%;
-  margin: auto;
-}
-.why-we figure .about-img {
-  width: 85%;
-  display: block;
-  margin: auto;
-}
-
-@media (min-width: 320px) and (max-width: 567px) {
-  .why-we figure {
-    width: 120%;
-    margin: auto;
-  }
-  .why-we figure .about-img {
-    width: 100%;
-    display: block;
-    margin: auto;
-  }
-}
-@media (min-width: 568px) and (max-width: 767px) {
-  .about-img {
-    width: 100%;
-  }
-}
-@media (max-width: 768px) {
-  .repeat-questions__accordion .accordion-button:not(.collapsed),
-.repeat-questions__accordion .accordion-button {
-    font-size: 1rem;
+@media (min-width: 992px) and (max-width: 1199px) {
+  .warning {
+    padding-top: 2rem;
   }
 }
 

@@ -4,14 +4,26 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>ثانوية عامة</title>
-        <link rel="icon" type="image/png" href="./assets/images/logo.svg" />
+        <title>Home</title>
         <!-- main-styles -->
-        <link rel="stylesheet" href="./assets/css/bootstrap.rtl.min.css" />
-        <!-- style -->
-        <link rel="stylesheet" href="assets/css/index.css" />
+        <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css" />
+        <link rel="stylesheet" href="assets/css/slick-theme.css" />
+        <link rel="stylesheet" href="assets/css/slick.css" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://unpkg.com/file-upload-with-preview@4.1.0/dist/file-upload-with-preview.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+            crossorigin="anonymous"
+        />
+        <!--style-->
+        <link rel="stylesheet" href="assets/css/main.css" />
     </head>
-    <body style="overflow: hidden;">
+    <body>
         <!-- start navbar -->
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
@@ -38,11 +50,8 @@
                             <a class="nav-link" href="/">الرئيسية</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="/about.html">
-                                من نحن
-                            </a>
+                            <a class="nav-link" href="/about.html">من نحن</a>
                         </li>
-
                         <li class="nav-item mx-1">
                             <a
                                 class="nav-link"
@@ -64,9 +73,8 @@
                         <button class="btn-subscribe btn">
                             اشترك فى المسابقة
                         </button>
-
                         <button type="button" class="btn-subscribe__now btn">
-                            <a href="sub-now.html">اشترك الآن</a>
+                            اشترك الآن
                         </button>
                     </ul>
                 </div>
@@ -108,22 +116,58 @@
             </div>
         </div>
         <!-- End Modal Free -->
-        <!-- start why-we -->
-        <section class="why-we sec after-navbar-section">
-            <figure>
-                <img class="about-img" src="assets/images/about.png" />
-            </figure>
+        <!--start sub section-->
+        <section class="sub-now after-navbar-section py-5">
+            <header class="main-header pt-5">
+                <span></span>
+                <h2>اشترك الآن</h2>
+            </header>
 
+            <div class="container">
+                <div
+                    class="row justify-content-center align-items-center sub-items"
+                >
+                    <div class="col-md-6">
+                        <figure class="d-flex align-items-center h-100">
+                            <img
+                                class="w-100"
+                                src="assets/images/sub.jpg"
+                                alt="sub-now"
+                            />
+                        </figure>
+                    </div>
+                    <div class="col-md-6 sub-item">
+                        <h3>اشتراك واحد يشمل جميع المواد الدراسية</h3>
+                        <ul class="sub">
+                            <li>100 جنيه اشتراك شهري</li>
+                            <li>250 جنيه اشتراك 3 شهور</li>
+                        </ul>
+                        <h3>
+                            يمكنكم الحصول على كود الاشتراك عن طريق أحد هذه الطرق
+                            الثلاث:
+                        </h3>
+                        <ul class="payment">
+                            <li>1-خدمة فوري Fawry pay</li>
+                            <li>2- خدمة فودافون كاش على الرقم التالي: ( )</li>
+                            بعد الدفع نرجو منكم ان تتواصلوا معنا على الواتساب
+                            على نفس الرقم لاستلام كود الاشتراك
+                            <li>
+                                3- بواسطة كود الشحن المتوفر فقط لدى المنافذ
+                                التالية المعتمدة لدينا
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="warning d-flex justify-content-center">
+                    <p class="text-center">
+                        <span id="first">تنويه:</span>
+                        يتم كتابة كود الاشتراك فى صفحة
+
+                        <a href="#">إعدادات</a>
+                    </p>
+                </div>
             </div>
         </section>
-        <!-- end why-we -->
-
-
-        <!-- scripts -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/slick.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/index.js"></script>
-        <script src="assets/js/slider.js"></script>
+        <!--end sub section-->
     </body>
 </html>

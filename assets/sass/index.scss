@@ -52,110 +52,37 @@
         }
     }
 }
-// why-we && uniquely
-.why-we,
-.uniquely {
-    &__content {
-        height: 97%;
-        border-radius: 0.5rem;
-        overflow: hidden;
-    }
-    &__items {
-        .item {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            justify-content: flex-end;
-            flex-direction: column;
-            border: 1px solid $border-gray;
-            border-radius: 10px;
-            min-height: 280px;
-            img {
-                width: 130px;
-                margin-bottom: 2rem;
+// sub-now
+.sub-now {
+    .sub-items {
+        .sub-item {
+            h3 {
+                font-weight: bold;
+                color: #fa776a;
+            }
+            .payment,
+            .sub {
+                padding: 1rem 0;
+                color: $main-color;
             }
         }
     }
+    .warning {
+        p {
+            color: #000;
+            #first {
+                color: red;
+            }
 
-    .why-we {
-        &__content {
-            background: url("/assets/images/home/why-we.png") no-repeat center
-                center;
-            position: relative;
-            background-size: cover;
-            p {
-                position: absolute;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                height: 300px;
-                color: white;
-                background: rgb(0, 94, 107);
-                background: linear-gradient(
-                    0deg,
-                    rgba(0, 94, 107, 1) 0%,
-                    rgba(0, 184, 208, 0.01) 100%
-                );
-                display: flex;
-                align-items: flex-end;
-                padding: 0 1rem 3.125rem;
-                font-size: 1.4rem;
-            }
-        }
-        &__items {
-            .item {
-                figcaption {
-                    margin-bottom: 1rem;
-                    font-size: 1.5rem;
-                    color: $gray70;
-                }
+            a {
+                border-bottom: 1px solid #03a9f4;
+                color: #03a9f4;
             }
         }
     }
 }
-.btn_useFree {
-    background-color: $primary;
-    color: white;
-    border: 1px solid $primary;
-    width: 12rem;
-    height: 3rem;
-    border-radius: 1rem;
-    margin-inline-end: 0.5rem;
-}
-.why-we {
-    figure {
-        width: 85%;
-        margin: auto;
-        .about-img {
-            width: 85%;
-            display: block;
-            margin: auto;
-        }
-    }
-}
-
-@include mobile-xs {
-    .why-we {
-        figure {
-            width: 120%;
-            margin: auto;
-            .about-img {
-                width: 100%;
-                display: block;
-                margin: auto;
-            }
-        }
-    }
-}
-@include mobile-sm {
-    .about-img {
-        width: 100%;
-    }
-}
-@include to-tablet-sm {
-    // repeated questions
-    .repeat-questions__accordion .accordion-button:not(.collapsed),
-    .repeat-questions__accordion .accordion-button {
-        font-size: 1rem;
+@include desktop {
+    .warning {
+        padding-top: 2rem;
     }
 }

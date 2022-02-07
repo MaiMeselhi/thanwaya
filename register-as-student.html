@@ -1,265 +1,328 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register | Student</title>
-    <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css" />
-    <link rel="stylesheet" href="assets/css/slick-theme.css" />
-    <link rel="stylesheet" href="assets/css/slick.css" />
-    <!--style-->
-    <link rel="stylesheet" href="assets/css/main.css" />
-  </head>
-  <body>
-    <!-- start navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container">
-        <a class="navbar-brand" href="/">
-          <img src="assets/images/home/logo.png" class="img-fluid" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Register | Student</title>
+        <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css" />
+        <link rel="stylesheet" href="assets/css/slick-theme.css" />
+        <link rel="stylesheet" href="assets/css/slick.css" />
+        <!--style-->
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body>
+        <!-- start navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="assets/images/home/logo.png" class="img-fluid" />
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                >
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html">من نحن</a>
+                        </li>
+
+                        <li class="nav-item mx-1">
+                            <a
+                                class="nav-link active"
+                                href="#"
+                                id="btn__popUp"
+                                data-bs-target="#choiseModal"
+                                data-bs-toggle="modal"
+                            >
+                                إنشاء حساب
+                            </a>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a class="nav-link" href="/login.html">
+                                تسجيل دخول
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto nav-right">
+                        <button class="btn-subscribe btn">
+                            اشترك فى المسابقة
+                        </button>
+                        <button type="button" class="btn-subscribe__now btn">
+                            <a href="sub-now.html">اشترك الآن</a>
+                        </button>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end navbar -->
+        <!-- Start Modal Free -->
+        <div
+            class="modal fade create-modal"
+            id="choiseModal"
+            tabindex="-1"
+            aria-labelledby="choiseModal"
+            aria-hidden="true"
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="/">الرئيسية</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/about.html">من نحن</a>
-            </li>
-
-            <li class="nav-item mx-1">
-              <a
-                class="nav-link active"
-                href="#"
-                id="btn__popUp"
-                data-bs-target="#choiseModal"
-                data-bs-toggle="modal"
-              >
-                إنشاء حساب
-              </a>
-            </li>
-            <li class="nav-item mx-1">
-              <a class="nav-link" href="/login.html">تسجيل دخول</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav ms-auto nav-right">
-            <button class="btn-subscribe btn">اشترك فى المسابقة</button>
-
-            <button type="button" class="btn-subscribe__now btn">
-              اشترك الآن
-            </button>
-          </ul>
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>إنشاء حساب جديد</h2>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="bg__popUp__content">
+                            <a href="register-as-teacher.html">
+                                <button class="bg__popUp__item">المعلم</button>
+                            </a>
+                            <a href="register-as-student.html">
+                                <button class="bg__popUp__item student">
+                                    الطالب
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </nav>
-    <!-- end navbar -->
-    <!-- Start Modal Free -->
-    <div
-      class="modal fade create-modal"
-      id="choiseModal"
-      tabindex="-1"
-      aria-labelledby="choiseModal"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2>إنشاء حساب جديد</h2>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="bg__popUp__content">
-              <a href="register-as-teacher.html">
-                <button class="bg__popUp__item">المعلم</button>
-              </a>
-              <a href="register-as-student.html">
-                <button class="bg__popUp__item student">الطالب</button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Modal Free -->
-    <section class="sec register">
-      <div class="container">
-        <header class="main-header">
-          <span></span>
-          <h2>إنشاء حساب الطالب</h2>
-        </header>
-        <form action="" novalidate class="needs-validation">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="mb-2">
-                <label for="student">اسم الطالب الرباعى *</label>
-                <input
-                  class="form-control"
-                  type="text"
-                  name="name"
-                  id="student"
-                  placeholder="اسم الطالب الرباعي"
-                  required
-                />
-                <div class="invalid-feedback">هذا الحقل مطلوب</div>
-              </div>
-              <div class="mb-2">
-                <label for="phone">رقم الهاتف</label>
-                <input
-                  class="form-control"
-                  name="number"
-                  id="phone"
-                  placeholder="رقم الهاتف"
-                  required
-                />
-              </div>
-              <div class="register__select mb-2">
-                <label for="language">الدراسة باللغة *</label>
-                <select class="form-control" name="language" id="language">
-                  <option value="ar">العربية</option>
-                  <option value="en">الإنجليزية</option>
-                  <option value="fr">الفرنسية</option>
-                </select>
-                <div class="invalid-feedback">هذا الحقل مطلوب</div>
-              </div>
-              <div class="register__select mb-2">
-                <label for="second-lang">اللغة الأجنبية الثانية *</label>
-                <select
-                  class="form-control"
-                  name="second-lang"
-                  id="second-lang"
-                  required
-                >
-                  <option value="italic">اللغة الإيطالية</option>
-                  <option value="italic">اللغة الإيطالية</option>
-                  <option value="italic">اللغة الإيطالية</option>
-                  <option value="italic">اللغة الإيطالية</option>
-                </select>
-                <div class="invalid-feedback">هذا الحقل مطلوب</div>
-              </div>
-              <div class="mb-2">
-                <label for="subscribe">كود الاشتراك</label>
-                <span
-                  type="button"
-                  class="i-icon"
-                  title="في حالة عدم أدخال الكود يمكنك أستخدام الموقع لمدة 6 ساعات"
-                  data-toggle="tooltip"
-                  data-placement="left"
-                >
-                  i
-                </span>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="أدخل كود الأشتراك"
-                  name="subscribe"
-                  id="subscribe"
-                />
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div>
-                <div class="mb-2">
-                  <label for="email">البريد الإلكتروني *</label>
-                  <input
-                    class="form-control"
-                    type="email"
-                    name="email"
-                    id="email"
-                    style="direction: rtl"
-                    placeholder="البريد الإلكتروني"
-                    required
-                  />
-                  <div class="invalid-feedback">هذا الحقل مطلوب</div>
-                </div>
-                <div class="mb-2">
-                  <label for="department">كلمة المرور *</label>
-                  <input
-                    type="password"
-                    name="password"
-                    id="password"
-                    placeholder="كلمة المرور  (ينصح باستخدام أكثر من 6 حروف وأرقام ورموز) "
-                    class="form-control"
-                    required
-                  />
-                  <div class="invalid-feedback">هذا الحقل مطلوب</div>
-                </div>
-                <div class="register__select mb-2">
-                  <label for="role">الصف الدراسي *</label>
-                  <select class="form-control" name="role" id="role" required>
-                    <option value="first">الأول الثانوي</option>
-                    <option value="second">الثاني الثانوي</option>
-                    <option value="third">الثالث الثانوي</option>
-                  </select>
-                  <div class="invalid-feedback">هذا الحقل مطلوب</div>
-                </div>
+        <!-- End Modal Free -->
+        <section class="sec register">
+            <div class="container">
+                <header class="main-header">
+                    <span></span>
+                    <h2>إنشاء حساب الطالب</h2>
+                </header>
+                <form action="" novalidate class="needs-validation">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-2">
+                                <label for="student">
+                                    اسم الطالب الرباعى *
+                                </label>
+                                <input
+                                    class="form-control"
+                                    type="text"
+                                    name="name"
+                                    id="student"
+                                    placeholder="اسم الطالب الرباعي"
+                                    required
+                                />
+                                <div class="invalid-feedback">
+                                    هذا الحقل مطلوب
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <label for="phone">رقم الهاتف</label>
+                                <input
+                                    class="form-control"
+                                    name="number"
+                                    id="phone"
+                                    placeholder="رقم الهاتف"
+                                    required
+                                />
+                            </div>
+                            <div class="register__select mb-2">
+                                <label for="language">الدراسة باللغة *</label>
+                                <select
+                                    class="form-control"
+                                    name="language"
+                                    id="language"
+                                >
+                                    <option value="ar">العربية</option>
+                                    <option value="en">الإنجليزية</option>
+                                    <option value="fr">الفرنسية</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    هذا الحقل مطلوب
+                                </div>
+                            </div>
+                            <div class="register__select mb-2">
+                                <label for="second-lang">
+                                    اللغة الأجنبية الثانية *
+                                </label>
+                                <select
+                                    class="form-control"
+                                    name="second-lang"
+                                    id="second-lang"
+                                    required
+                                >
+                                    <option value="italic">
+                                        اللغة الإيطالية
+                                    </option>
+                                    <option value="italic">
+                                        اللغة الإيطالية
+                                    </option>
+                                    <option value="italic">
+                                        اللغة الإيطالية
+                                    </option>
+                                    <option value="italic">
+                                        اللغة الإيطالية
+                                    </option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    هذا الحقل مطلوب
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <label for="subscribe">كود الاشتراك</label>
+                                <span
+                                    type="button"
+                                    class="i-icon"
+                                    title="في حالة عدم أدخال الكود يمكنك أستخدام الموقع لمدة 6 ساعات"
+                                    data-toggle="tooltip"
+                                    data-placement="left"
+                                >
+                                    i
+                                </span>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="أدخل كود الأشتراك"
+                                    name="subscribe"
+                                    id="subscribe"
+                                />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <div class="mb-2">
+                                    <label for="email">
+                                        البريد الإلكتروني *
+                                    </label>
+                                    <input
+                                        class="form-control"
+                                        type="email"
+                                        name="email"
+                                        id="email"
+                                        style="direction: rtl"
+                                        placeholder="البريد الإلكتروني"
+                                        required
+                                    />
+                                    <div class="invalid-feedback">
+                                        هذا الحقل مطلوب
+                                    </div>
+                                </div>
+                                <div class="mb-2">
+                                    <label for="department">
+                                        كلمة المرور *
+                                    </label>
+                                    <input
+                                        type="password"
+                                        name="password"
+                                        id="password"
+                                        placeholder="كلمة المرور  (ينصح باستخدام أكثر من 6 حروف وأرقام ورموز) "
+                                        class="form-control"
+                                        required
+                                    />
+                                    <div class="invalid-feedback">
+                                        هذا الحقل مطلوب
+                                    </div>
+                                </div>
+                                <div class="register__select mb-2">
+                                    <label for="role">الصف الدراسي *</label>
+                                    <select
+                                        class="form-control"
+                                        name="role"
+                                        id="role"
+                                        required
+                                    >
+                                        <option value="first">
+                                            الأول الثانوي
+                                        </option>
+                                        <option value="second">
+                                            الثاني الثانوي
+                                        </option>
+                                        <option value="third">
+                                            الثالث الثانوي
+                                        </option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        هذا الحقل مطلوب
+                                    </div>
+                                </div>
 
-                <div class="mb-2">
-                  <label for="department">الشعبة الدراسية *</label>
-                  <select
-                    class="form-control"
-                    name="department"
-                    id="department"
-                    required
-                  >
-                    <option value="first">الشعبة العلمية (علوم)</option>
-                    <option value="second">الشعبة العلمية (رياضة)</option>
-                    <option value="third">الشعبة الأزهرية رياضة</option>
-                    <option value="fourth">الشعبة الأزهريةعلمي</option>
-                  </select>
-                  <div class="invalid-feedback">هذا الحقل مطلوب</div>
-                </div>
-              </div>
+                                <div class="mb-2">
+                                    <label for="department">
+                                        الشعبة الدراسية *
+                                    </label>
+                                    <select
+                                        class="form-control"
+                                        name="department"
+                                        id="department"
+                                        required
+                                    >
+                                        <option value="first">
+                                            الشعبة العلمية (علوم)
+                                        </option>
+                                        <option value="second">
+                                            الشعبة العلمية (رياضة)
+                                        </option>
+                                        <option value="third">
+                                            الشعبة الأزهرية رياضة
+                                        </option>
+                                        <option value="fourth">
+                                            الشعبة الأزهريةعلمي
+                                        </option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        هذا الحقل مطلوب
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn w-full">
+                        إنشاء حساب
+                        <img src="assets/images/home/arrow-left.svg" alt="" />
+                    </button>
+                </form>
             </div>
-          </div>
-          <button type="submit" class="btn w-full">
-            إنشاء حساب
-            <img src="assets/images/home/arrow-left.svg" alt="" />
-          </button>
-        </form>
-      </div>
-    </section>
-    <!-- scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/slick.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/index.js"></script>
-    <script src="assets/js/slider.js"></script>
-    <script>
-      (function () {
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var forms = document.querySelectorAll(".needs-validation");
-        // Loop over them and prevent submission
-        Array.prototype.slice.call(forms).forEach(function (form) {
-          form.addEventListener(
-            "submit",
-            function (event) {
-              if (!form.checkValidity()) {
-                event.preventDefault();
-                event.stopPropagation();
-              }
+        </section>
+        <!-- scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/slick.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/index.js"></script>
+        <script src="assets/js/slider.js"></script>
+        <script>
+            (function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.querySelectorAll(".needs-validation");
+                // Loop over them and prevent submission
+                Array.prototype.slice.call(forms).forEach(function (form) {
+                    form.addEventListener(
+                        "submit",
+                        function (event) {
+                            if (!form.checkValidity()) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                            }
 
-              form.classList.add("was-validated");
-            },
-            false
-          );
-        });
-      })();
-    </script>
-  </body>
+                            form.classList.add("was-validated");
+                        },
+                        false
+                    );
+                });
+            })();
+        </script>
+    </body>
 </html>

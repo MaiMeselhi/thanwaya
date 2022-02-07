@@ -1,223 +1,254 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ثانوية عامة</title>
-    <link rel="icon" type="image/png" href="./assets/images/logo.svg" />
-    <!-- main-styles -->
-    <!-- fileupload package -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://unpkg.com/file-upload-with-preview@4.1.0/dist/file-upload-with-preview.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
-    />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ثانوية عامة</title>
+        <link rel="icon" type="image/png" href="./assets/images/logo.svg" />
+        <!-- main-styles -->
+        <!-- fileupload package -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://unpkg.com/file-upload-with-preview@4.1.0/dist/file-upload-with-preview.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+            crossorigin="anonymous"
+        />
 
-    <link rel="stylesheet" href="./assets/css/bootstrap.rtl.min.css" />
-    <!-- style -->
-    <link rel="stylesheet" href="assets/css/index.css" />
-  </head>
-  <body>
-    <!-- start navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container">
-        <a class="navbar-brand" href="/">
-          <img src="assets/images/home/logo.png" class="img-fluid" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="/">الرئيسية</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/about.html">من نحن</a>
-            </li>
-
-            <li class="nav-item mx-1">
-              <a
-                class="nav-link"
-                href="#"
-                id="btn__popUp"
-                data-bs-target="#choiseModal"
-                data-bs-toggle="modal"
-              >
-                إنشاء حساب
-              </a>
-            </li>
-            <li class="nav-item mx-1">
-              <a class="nav-link" href="/login.html">تسجيل دخول</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav ms-auto nav-right">
-            <button class="btn-subscribe btn">اشترك فى المسابقة</button>
-
-            <button type="button" class="btn-subscribe__now btn">
-              اشترك الآن
-            </button>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- end navbar -->
-    <!-- Start Modal Free -->
-    <div
-      class="modal fade create-modal"
-      id="choiseModal"
-      tabindex="-1"
-      aria-labelledby="choiseModal"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2>إنشاء حساب جديد</h2>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="bg__popUp__content">
-              <a href="register-as-teacher.html">
-                <button class="bg__popUp__item">المعلم</button>
-              </a>
-              <a href="register-as-student.html">
-                <button class="bg__popUp__item student">الطالب</button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Modal Free -->
-    <!-- start contact-us -->
-    <section class="sec contact-us">
-      <div class="container">
-        <header class="main-header">
-          <span></span>
-          <h2>تواصل معنا</h2>
-        </header>
-        <p class="text">يسعدنا استقبال جميع نصائحكم ومقترحاتكم واستفساراتكم</p>
-
-        <div class="row">
-          <div class="col-md-6">
-            <figure class="d-flex align-items-center h-100">
-              <img src="/assets/images/contact-us.png" alt="contact-us" />
-            </figure>
-          </div>
-          <div class="col-md-6">
-            <form class="needs-validation" novalidate>
-              <input
-                class="form-control"
-                type="text"
-                name="name"
-                placeholder="الاسم"
-                required
-              />
-              <div class="invalid-feedback">هذا الحقل مطلوب</div>
-              <input
-                class="form-control"
-                type="text"
-                name="phone"
-                placeholder="رقم الهاتف"
-                required
-              />
-              <div class="invalid-feedback">هذا الحقل مطلوب</div>
-              <input
-                class="form-control"
-                name="email"
-                placeholder="البريد الإلكتروني"
-                required
-              />
-              <div class="invalid-feedback">هذا الحقل مطلوب</div>
-              <textarea
-                class="form-control"
-                name="message"
-                placeholder="اكتبوا لنا رسالتكم ..."
-                rows="3"
-                required
-              ></textarea>
-              <div class="invalid-feedback">هذا الحقل مطلوب</div>
-
-              <div
-                class="custom-file-container"
-                data-upload-id="myUniqueUploadId"
-              >
-                <label for="file-upload-for-label-click" class="w-100">
-                  <div class="d-flex justify-content-between">
-                    <div style="cursor: pointer">
-                      <i class="fas fa-plus-circle" style="color: #03a9f4"></i>
-                      اختر الملف (يمكنك إضافة أكثر من صورة)
-                    </div>
-                    <a
-                      href="javascript:void(0)"
-                      class="custom-file-container__image-clear"
-                      title="Clear Image"
-                    >
-                      <i class="fas fa-trash-alt" style="color: #f44336"></i>
-                    </a>
-                  </div>
-                </label>
-                <label
-                  style="display: none"
-                  class="custom-file-container__custom-file"
+        <link rel="stylesheet" href="./assets/css/bootstrap.rtl.min.css" />
+        <!-- style -->
+        <link rel="stylesheet" href="assets/css/index.css" />
+    </head>
+    <body>
+        <!-- start navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="assets/images/home/logo.png" class="img-fluid" />
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
                 >
-                  <input
-                    type="file"
-                    id="file-upload-for-label-click"
-                    class="custom-file-container__custom-file__custom-file-input"
-                    accept="*"
-                    multiple
-                    aria-label="Choose File"
-                  />
-                  <input type="hidden" name="MAX_FILE_SIZE" value="10485760" />
-                  <span
-                    class="custom-file-container__custom-file__custom-file-control"
-                  ></span>
-                </label>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div
-                  class="custom-file-container__image-preview"
-                  style="height: 150px"
-                ></div>
-              </div>
-              <button type="submit" class="btn w-full">
-                إرسال
-                <img src="assets/images/home/arrow-left.svg" alt="" />
-              </button>
-            </form>
-          </div>
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                >
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html">من نحن</a>
+                        </li>
+
+                        <li class="nav-item mx-1">
+                            <a
+                                class="nav-link"
+                                href="#"
+                                id="btn__popUp"
+                                data-bs-target="#choiseModal"
+                                data-bs-toggle="modal"
+                            >
+                                إنشاء حساب
+                            </a>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a class="nav-link" href="/login.html">
+                                تسجيل دخول
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto nav-right">
+                        <button class="btn-subscribe btn">
+                            اشترك فى المسابقة
+                        </button>
+
+                        <button type="button" class="btn-subscribe__now btn">
+                            <a href="sub-now.html">اشترك الآن</a>
+                        </button>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end navbar -->
+        <!-- Start Modal Free -->
+        <div
+            class="modal fade create-modal"
+            id="choiseModal"
+            tabindex="-1"
+            aria-labelledby="choiseModal"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>إنشاء حساب جديد</h2>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="bg__popUp__content">
+                            <a href="register-as-teacher.html">
+                                <button class="bg__popUp__item">المعلم</button>
+                            </a>
+                            <a href="register-as-student.html">
+                                <button class="bg__popUp__item student">
+                                    الطالب
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
-    <!-- end contact-us -->
-    <!-- scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/slick.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/index.js"></script>
-    <script src="assets/js/slider.js"></script>
-    <!-- <script src="assets/js/bootstrap-filestyle.min.js"></script> -->
-    <!-- <script>
+        <!-- End Modal Free -->
+        <!-- start contact-us -->
+        <section class="sec contact-us">
+            <div class="container">
+                <header class="main-header">
+                    <span></span>
+                    <h2>تواصل معنا</h2>
+                </header>
+                <p class="text">
+                    يسعدنا استقبال جميع نصائحكم ومقترحاتكم واستفساراتكم
+                </p>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <figure class="d-flex align-items-center h-100">
+                            <img
+                                src="/assets/images/contact-us.png"
+                                alt="contact-us"
+                            />
+                        </figure>
+                    </div>
+                    <div class="col-md-6">
+                        <form class="needs-validation" novalidate>
+                            <input
+                                class="form-control"
+                                type="text"
+                                name="name"
+                                placeholder="الاسم"
+                                required
+                            />
+                            <div class="invalid-feedback">هذا الحقل مطلوب</div>
+                            <input
+                                class="form-control"
+                                type="text"
+                                name="phone"
+                                placeholder="رقم الهاتف"
+                                required
+                            />
+                            <div class="invalid-feedback">هذا الحقل مطلوب</div>
+                            <input
+                                class="form-control"
+                                name="email"
+                                placeholder="البريد الإلكتروني"
+                                required
+                            />
+                            <div class="invalid-feedback">هذا الحقل مطلوب</div>
+                            <textarea
+                                class="form-control"
+                                name="message"
+                                placeholder="اكتبوا لنا رسالتكم ..."
+                                rows="3"
+                                required
+                            ></textarea>
+                            <div class="invalid-feedback">هذا الحقل مطلوب</div>
+
+                            <div
+                                class="custom-file-container"
+                                data-upload-id="myUniqueUploadId"
+                            >
+                                <label
+                                    for="file-upload-for-label-click"
+                                    class="w-100"
+                                >
+                                    <div class="d-flex justify-content-between">
+                                        <div style="cursor: pointer">
+                                            <i
+                                                class="fas fa-plus-circle"
+                                                style="color: #03a9f4"
+                                            ></i>
+                                            اختر الملف (يمكنك إضافة أكثر من
+                                            صورة)
+                                        </div>
+                                        <a
+                                            href="javascript:void(0)"
+                                            class="custom-file-container__image-clear"
+                                            title="Clear Image"
+                                        >
+                                            <i
+                                                class="fas fa-trash-alt"
+                                                style="color: #f44336"
+                                            ></i>
+                                        </a>
+                                    </div>
+                                </label>
+                                <label
+                                    style="display: none"
+                                    class="custom-file-container__custom-file"
+                                >
+                                    <input
+                                        type="file"
+                                        id="file-upload-for-label-click"
+                                        class="custom-file-container__custom-file__custom-file-input"
+                                        accept="*"
+                                        multiple
+                                        aria-label="Choose File"
+                                    />
+                                    <input
+                                        type="hidden"
+                                        name="MAX_FILE_SIZE"
+                                        value="10485760"
+                                    />
+                                    <span
+                                        class="custom-file-container__custom-file__custom-file-control"
+                                    ></span>
+                                </label>
+                                <div
+                                    class="custom-file-container__image-preview"
+                                    style="height: 150px"
+                                ></div>
+                            </div>
+                            <button type="submit" class="btn w-full">
+                                إرسال
+                                <img
+                                    src="assets/images/home/arrow-left.svg"
+                                    alt=""
+                                />
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end contact-us -->
+        <!-- scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/slick.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/index.js"></script>
+        <script src="assets/js/slider.js"></script>
+        <!-- <script src="assets/js/bootstrap-filestyle.min.js"></script> -->
+        <!-- <script>
       imgInp.onchange = (evt) => {
         const [file] = imgInp.files;
         if (file) {
@@ -227,32 +258,32 @@
       };
     </script> -->
 
-    <script src="https://unpkg.com/file-upload-with-preview@4.1.0/dist/file-upload-with-preview.min.js"></script>
-    <script>
-      var upload = new FileUploadWithPreview("myUniqueUploadId");
-      // Example starter JavaScript for disabling form submissions if there are invalid fields
-      (function () {
-        "use strict";
+        <script src="https://unpkg.com/file-upload-with-preview@4.1.0/dist/file-upload-with-preview.min.js"></script>
+        <script>
+            var upload = new FileUploadWithPreview("myUniqueUploadId");
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function () {
+                "use strict";
 
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var forms = document.querySelectorAll(".needs-validation");
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.querySelectorAll(".needs-validation");
 
-        // Loop over them and prevent submission
-        Array.prototype.slice.call(forms).forEach(function (form) {
-          form.addEventListener(
-            "submit",
-            function (event) {
-              if (!form.checkValidity()) {
-                event.preventDefault();
-                event.stopPropagation();
-              }
+                // Loop over them and prevent submission
+                Array.prototype.slice.call(forms).forEach(function (form) {
+                    form.addEventListener(
+                        "submit",
+                        function (event) {
+                            if (!form.checkValidity()) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                            }
 
-              form.classList.add("was-validated");
-            },
-            false
-          );
-        });
-      })();
-    </script>
-  </body>
+                            form.classList.add("was-validated");
+                        },
+                        false
+                    );
+                });
+            })();
+        </script>
+    </body>
 </html>
