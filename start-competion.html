@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Home</title>
+        <title>اشترك فى المسابقة</title>
         <!-- main-styles -->
         <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css" />
         <link rel="stylesheet" href="assets/css/slick-theme.css" />
@@ -47,7 +47,7 @@
                 >
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" href="/">الرئيسية</a>
+                            <a class="nav-link" href="/">الرئيسية</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/about.html">من نحن</a>
@@ -71,7 +71,7 @@
                     </ul>
                     <ul class="navbar-nav ms-auto nav-right">
                         <button class="btn-subscribe btn">
-                            اشترك فى المسابقة
+                            <a href="start-competion.html">اشترك فى المسابقة</a>
                         </button>
                         <button type="button" class="btn-subscribe__now btn">
                             <a href="sub-now.html">اشترك الآن</a>
@@ -119,7 +119,7 @@
         <!--start sub-competion-->
 
         <section class="sub-competion after-navbar-section py-5">
-            <header class="main-header pt-5">
+            <header class="main-header">
                 <span></span>
                 <h2>حصّل أعلى الدرجات العلمية وساعد أسرتك</h2>
             </header>
@@ -253,5 +253,15 @@
         </section>
 
         <!--end sub competion-->
+        <!-- scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/slick.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/slider.js"></script>
+        <script src="assets/js/index.js"></script>
+        <script src="https://unpkg.com/file-upload-with-preview@4.1.0/dist/file-upload-with-preview.min.js"></script>
+        <script>
+            var upload = new FileUploadWithPreview("myUniqueUploadId");
+        </script>
     </body>
 </html>
