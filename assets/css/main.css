@@ -3868,6 +3868,9 @@ header.main-header h2 {
 .sub-competion .future-award p {
   font-weight: bold;
 }
+.sub-competion .message {
+  font-weight: bold;
+}
 .sub-competion .start-competion {
   border: 1px solid #2eb086;
   background: #2eb086 !important;
